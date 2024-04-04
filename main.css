@@ -297,7 +297,7 @@ transform: none;
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   h1, h2 {
-      font-size: x-large;
+      font-size: large;
   }
 
   h3 {
@@ -334,17 +334,18 @@ transform: none;
   .boxbox {
 
       float:none;
-      width: 80%;
-      margin-left: 10%;
+      width: 100%;
+      margin: 10%;
   }
 
   .box {
-      font-size: 20px;
-      width: 400px;
+      font-size: 14px;
+      margin-left: 15%;
+
   }
 
   .box img{
-    width: 400px;
+    width: 100%;
   }
 
   .toplayer {
@@ -376,10 +377,14 @@ transform: none;
   }
 
   #menuToggle span {
-    margin-left: -60px;
+    margin-left: -100%;
   }
 
   #menuToggle input {
-    margin-left: -60px;
+    margin-left: -100%;
+  }
+
+  .box iframe{
+    width: 100%
   }
 }
