@@ -37,6 +37,13 @@ font-size: medium;
 letter-spacing: 2px;
 }
 
+a {
+  color: #f9f1cc;
+font-family: 'CopyText', sans-serif;
+font-size: medium;
+letter-spacing: 2px;
+}
+
 li { 
   margin-bottom: 10px;
 }
