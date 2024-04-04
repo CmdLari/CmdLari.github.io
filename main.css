@@ -376,13 +376,13 @@ transform: none;
     text-indent: 5px;
   }
 
-  #menuToggle span {
+  /* #menuToggle span {
     margin-left: -100%;
-  }
+  } */
 
-  #menuToggle input {
+  /* #menuToggle input {
     margin-left: -80%;
-  }
+  } */
 
   .box iframe{
     width: 80%
