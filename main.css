@@ -52,13 +52,6 @@ li {
   z-index: -99;
 }
 
-.banner {
-width: 70%;
-margin-left: 15%;
-display:flex;
-justify-content: center;
-align-items: center;
-}
 
 /***************************************************************************************************/
 /* CONTENT */
@@ -332,9 +325,6 @@ transform: none;
       box-shadow: 50px 50px 50px 50px rgba(0,0,0,0.8);
   }
 
-  .banner img{
-    width:50%;
-  }
 
   .socials img{
     width: 2px;
