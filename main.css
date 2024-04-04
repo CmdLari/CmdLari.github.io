@@ -376,13 +376,18 @@ transform: none;
     text-indent: 5px;
   }
 
-  /* #menuToggle span {
-    margin-left: -100%;
+  #menuToggle span {
+    margin-left: 20%;
   } */
 
-  /* #menuToggle input {
-    margin-left: -80%;
-  } */
+  #menuToggle input {
+    margin-left: 20%;
+  }
+
+  .menubox ul#menu li
+  {
+    margin-left: 80px;
+    }
 
   .box iframe{
     width: 80%
