@@ -381,10 +381,10 @@ transform: none;
   }
 
   #menuToggle input {
-    margin-left: -100%;
+    margin-left: -80%;
   }
 
   .box iframe{
-    width: 100%
+    width: 80%
   }
 }
