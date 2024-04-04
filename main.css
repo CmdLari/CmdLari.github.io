@@ -64,6 +64,24 @@ align-items: center;
 /* CONTENT */
 /***************************************************************************************************/
 
+.socials {
+  width: 70%; 
+  padding: 20px;
+  text-align: center;
+  margin-left: 15%;
+
+}
+
+
+.socials a img{
+  width: 20px;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle; 
+
+}
+
 .boxbox {
   background-image: url(assets/Website_Background.png);
   background-repeat: repeat-y;
@@ -83,6 +101,10 @@ align-items: center;
   font-size: 14pt;
   line-height: 200%;
   text-align: left;
+}
+
+.box img {
+  width: 500px;
 }
 
 .box ul{
@@ -252,6 +274,8 @@ position: sticky;
 width: 100%;
 margin: -100px 50px 0 -100px;
 padding-top: 125px;
+padding-right: 20px;
+padding-bottom: 20px;
 font-family: 'CopyText', sans-serif;
 text-transform: uppercase;
 background: #000000;
@@ -312,6 +336,11 @@ transform: none;
     width:50%;
   }
 
+  .socials img{
+    width: 2px;
+  }
+
+
   .boxbox {
 
       float:none;
@@ -320,8 +349,12 @@ transform: none;
   }
 
   .box {
-      font-size: 12px;
-      width: 75%;
+      font-size: 20px;
+      width: 400px;
+  }
+
+  .box img{
+    width: 400px;
   }
 
   .toplayer {
@@ -348,11 +381,15 @@ transform: none;
   #menu li{
     font-size: 10pt;
     padding: 2px;
-    margin-left: 60px;
+    margin-left: 10px;
     text-indent: 5px;
   }
 
   #menuToggle span {
-    margin-left: 10px;
+    margin-left: -60px;
+  }
+
+  #menuToggle input {
+    margin-left: -60px;
   }
 }
