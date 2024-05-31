@@ -26,7 +26,7 @@ h1 {
 h2 {
   color: #4e539c;
   font-family: 'Header', sans-serif;
-  font-size: x-large;
+  font-size: large;
   letter-spacing: 2px;
 }
 
@@ -110,70 +110,32 @@ padding-left: 0%;
 /* GALLERY */
 /***************************************************************************************************/
 
-.container {
-  position: relative;
-  width: 50%;
+.gallery p {
+  width: 90%;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.mySlides {
-  display:none;
+
+.gallery img {
+  width: 20%;
 }
-.cursor {
-  cursor: pointer;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #f9f1cc;
-  font-family: 'CopyText', sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-  background-color: rgb(0, 0, 0);
-}
-.numbertext {
-  color: #f9f1cc;
-  font-family: 'CopyText', sans-serif;
-  font-size: 14px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.caption-container {
-  text-align: center;
-  background-color: #000000;
-  font-family: 'CopyText', sans-serif;
-  padding: 2px 16px;
-  color: #f9f1cc;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}  
-.column {
-  float: left;
-  width: 25%;
-}
+
 .demo {
-  opacity: 0.6;
-}  
-.active,
+  width: 10%;
+  cursor: pointer;
+  transition: transform 0.3s ease, z-index 50s ease 0.3s;
+}
+
 .demo:hover {
   opacity: 1;
+}
+
+.demo:active {
+  transform: scale(5);
+  z-index: 10;
 }
 
 
@@ -195,6 +157,7 @@ padding-left: 0%;
   justify-content: center;
   background-color: #000000;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .navbar ul {
@@ -202,7 +165,8 @@ padding-left: 0%;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .navbar li {
@@ -214,7 +178,7 @@ padding-left: 0%;
   color: #967597;
   font-family: 'CopyText', sans-serif;
   text-transform: uppercase;
-  padding: 10px 20px;
+  padding: 10px 15px;
   transition: color 0.3s ease;
 }
 
@@ -301,12 +265,22 @@ padding-left: 0%;
     column-gap: 2px;
     align-content: center;
     margin: auto;
+    width: 100%;
   }
 
   .navbar{
     width: 80%;
     margin: auto;
-    font-size: xx-small;
+    font-size: small;
+    flex-direction: row; 
+    justify-content: space-around;
+    padding: 5px 0;
+    flex-wrap: nowrap;
+  }
+  .navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .navbar a{
@@ -337,5 +311,11 @@ padding-left: 0%;
   h3 {
     font-size: small;
   }
+
+  .demo:active {
+    transform: scale(10);
+    z-index: 50;
+  }
+
 
 }
