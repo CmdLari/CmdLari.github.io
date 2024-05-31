@@ -313,7 +313,7 @@ padding-left: 0%;
   }
 
   .demo:active {
-    transform: scale(10);
+    transform: scale(1);
     z-index: 50;
   }
 
