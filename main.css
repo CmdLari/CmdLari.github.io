@@ -252,18 +252,19 @@ padding-left: 0%;
   }
 
   .menubox {
+    column-gap: 2px;
     align-content: center;
-    width: 100%;
     margin: auto;
   }
 
   .navbar{
     width: 80%;
+    margin: auto;
+    font-size: xx-small;
   }
 
   .navbar a{
-    font-size: x-small;
-    padding: 3px;
+    font-size: xx-small;
   }
 
   .box {
