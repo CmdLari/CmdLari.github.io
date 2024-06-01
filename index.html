@@ -45,6 +45,8 @@
           </div>
 
 
+
+
           <div class="box" id="Socials">
             <div class="socials">
               <p style="text-align: center;">
@@ -67,6 +69,7 @@
                   <iframe src="https://store.steampowered.com/widget/2926910/" frameborder="0" width="100%" height="190"></iframe>
                 </p>
             </div>
+
           </div>
             <div class="box" id="About">
                   <img src="assets/BanishingYou_AboutSection_About.png" alt="About" style="display: block; margin: auto;">  
@@ -74,6 +77,7 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/nAHvBHWlycM" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
                   <br>
                 </p>
+
                 <p>
                   Are you bored? Maybe a bit lost in your routine? Are your days slow, and nothing ever really happens?  
                   Be that person in a video game too! Until a mysterious invitation alters everything and you are called into another world.
@@ -86,31 +90,38 @@
                 </p>
             </div>
 
-            <!--IMAGE GALLERY-->
+            <div id="full" class="hide"><img></div>
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------Gallery------------------------------------------------------------>
+<!-------------------------------------------------------------------------------------------------------------------------->
           <div class="box">
             <div class="gallery">
               <p>
-                <img class="demo cursor" src="assets/Website_Gallery_01.jpg" alt="Menu Screen" onclick="toggleSize(this)">
-                <img class="demo cursor" src="assets/Website_Gallery_02.jpg" alt="In Game" onclick="toggleSize(this)">
-                <img class="demo cursor" src="assets/Website_Gallery_03.jpg" alt="In Game" onclick="toggleSize(this)">
-                <img class="demo cursor" src="assets/Website_Gallery_04.jpg" alt="Splash Art" onclick="toggleSize(this)">
+                <img src="assets/Website_Gallery_01.jpg" alt="Menu Screen">
+                <img src="assets/Website_Gallery_02.jpg" alt="In Game">
+                <img src="assets/Website_Gallery_03.jpg" alt="In Game">
+                <img src="assets/Website_Gallery_04.jpg" alt="Splash Art">
               </p>
             </div>
           </div>
 
-          <script>
-            function toggleSize(img) {
-              if (window.innerWidth > 768) {
-                if (img.style.transform === "scale(10)") {
-                  img.style.transform = "scale(1)";
-                  img.style.zIndex = "1";
-                } else {
-                  img.style.transform = "scale(10)";
-                  img.style.zIndex = "50";
-                }
-              }
-            }
-          </script>
+            <script>
+
+                document.querySelectorAll('img')
+                .forEach($img => $img.onclick = () => {
+                  if (window.innerWidth > 768) {
+                  const $full = document.querySelector('#full')
+                  $full.classList.remove('hide')
+                  $full.querySelector('img').src = $img.src
+                  $full.onclick = () => $full.classList.add('hide')}
+                })  
+
+            </script>
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------Features----------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------------------------->
 
             <div class="box" style="padding-top: 100px" id="Features">
               <br>
