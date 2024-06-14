@@ -247,7 +247,7 @@ li {
   float: left;
   width: 2px;
   margin-right: 2%;
-  height: max-content;
+  height: 100cqh;
   background-color: #aa863b;
   background: linear-gradient(to top, transparent, #aa863b, transparent);
 }
