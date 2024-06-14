@@ -219,7 +219,7 @@ li {
     font-size: small;
   }
 
-  .boxbox, .box, .box img, iframe {
+  .boxbox, .box, .boxAlways, .box img, iframe {
     width: 90%;
     margin: auto;
   }
@@ -243,7 +243,7 @@ li {
   }
 
   .navbar a {
-    font-size: xx-small;
+    font-size: x-small;
   }
 
   h1 {
