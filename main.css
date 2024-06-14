@@ -26,14 +26,14 @@ h3 {
 }
 
 h1 {
-  color: #967597;
+  color: #2e4167;
   font-size: xxx-large;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 h2, h3 {
-  color: #4e539c;
+  color: #aa863b;
 }
 
 h2 {
@@ -61,6 +61,10 @@ li {
 /***************************************************************************************************/
 /* CONTENT */
 /***************************************************************************************************/
+#BanishingYou {
+  display: block;
+}
+
 .socials {
   width: 80%; 
   margin: auto;
@@ -81,6 +85,18 @@ li {
 }
 
 .box {
+  display: none;
+  width: 50%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0);
+  color: #ddd9c0;
+  font-family: sans-serif;
+  font-size: medium;
+  line-height: 150%;
+  text-align: left;
+}
+
+.boxAlways {
   width: 50%;
   margin: auto;
   background: rgba(0, 0, 0, 0);
@@ -111,7 +127,7 @@ li {
 }
 
 .gallery img {
-  width: 20%;
+  width: 25%;
   transition: opacity 0.3s ease;
 }
 
@@ -193,41 +209,6 @@ li {
 
 .navbar a:hover {
   color: #ddd9c0;
-}
-
-/***************************************************************************************************/
-/* MENU BOT */
-/***************************************************************************************************/
-.bottom-menu {
-  position: fixed;
-  bottom: 0;
-  background-color: #000;
-  width: 60%;
-  margin: auto;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-}
-
-.bottom-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.bottom-menu li {
-  display: inline;
-}
-
-.bottom-menu a {
-  color: #967597;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.bottom-menu a:hover {
-  color: #f9f1cc;
 }
 
 /***************************************************************************************************/
