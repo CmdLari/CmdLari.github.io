@@ -2,17 +2,15 @@
 /* GENERAL LAYOUT */
 /***************************************************************************************************/
 html {
-  background-color: #000;
-}
-
-@font-face {
-  font-family: 'CopyText';
-  src: url('assets/RobotoSlab-Medium.ttf');
+  background-color: #010712;
+  line-height: 1.7;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 @font-face {
   font-family: 'Header';
-  src: url('assets/PermanentMarker-Regular.ttf');
+  src: url('assets/RobotoSlab-Medium.ttf');
 }
 
 h1, h2 {
@@ -43,36 +41,21 @@ h2 {
 }
 
 h3 {
-  font-family: 'CopyText', sans-serif;
+  font-family: sans-serif;
   font-size: medium;
 }
 
 a {
-  color: #f9f1cc;
-  font-family: 'CopyText', sans-serif;
-  font-size: medium;
-  letter-spacing: 2px;
+  color: #aa863b;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #f9f1cc;
+  color: #ddd9c0;
 }
 
 li { 
   margin-bottom: 10px;
-}
-
-.background {
-  position: absolute;
-  background-image: url('assets/background.gif');
-  background-repeat: no-repeat;
-  width: 90%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -99;
 }
 
 /***************************************************************************************************/
@@ -101,8 +84,8 @@ li {
   width: 50%;
   margin: auto;
   background: rgba(0, 0, 0, 0);
-  color: #f9f1cc;
-  font-family: 'CopyText', sans-serif;
+  color: #ddd9c0;
+  font-family: sans-serif;
   font-size: medium;
   line-height: 150%;
   text-align: left;
@@ -176,14 +159,14 @@ li {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #000;
+  background-color: #010712;
   width: 100%;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #000;
+  background-color: #010712;
   padding: 10px 0;
   flex-wrap: wrap;
 }
@@ -202,12 +185,14 @@ li {
 }
 
 .navbar a {
-  color: #967597;
+  font-family: "Header", sans-serif;
+  text-transform: uppercase;
+  color: #aa863b;
   padding: 10px 15px;
 }
 
 .navbar a:hover {
-  color: #f9f1cc;
+  color: #ddd9c0;
 }
 
 /***************************************************************************************************/
