@@ -5,160 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./assets/Favicon.ico">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript" src="jstools.js"></script>
     <title>Banishing You</title>
 </head>
-<body>
-    <div class="background">
+    <body>
+            <div class="background">
 
-      <!-- About -->
-      <div class="boxbox">
-        <div class="box" id="Banner">
-            <img src="assets/Website_Banner.gif" alt="Banner" style="display: block; margin: auto;">
+                <!-- About -->
+                <div class="boxbox">
+                    <div class="boxAlways" id="Banner">
+                        <img src="assets/LapysGames_Logo.png" alt="Banner" style="display: block; margin: auto; width: 100px; padding: 50px;">
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="menubox">
+                        <br>
+                        <nav class="navbar">
+                            <ul>
+                                <li><a href="#AboutMe">About Me</a></li>
+                                <li><a href="#BanishingYou">Banishing You</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!-- Socials -->
+                    <div class="boxAlways" id="Socials">
+                    <div class="socials">
+                        <p style="text-align: center;">
+                            <br>
+                            <a href="https://www.reddit.com/r/lapysgames/" target="_blank">
+                                <img src="assets/logoReddit.png" alt="Reddit"></a>
+                            <a href="https://twitter.com/LapysGames" target="_blank">
+                                <img src="assets/logoX.png" alt="Twitter"></a>
+                            <a href="https://www.youtube.com/channel/UCg125JrPUlolO5vH_4olS2w" target="_blank">
+                                <img src="assets/logoYoutube.png" alt="YouTube"></a>
+                            <a href="https://www.tiktok.com/@lapysgames" target="_blank">
+                                <img src="assets/logoTiktok.png" alt="TikTok"></a>
+                            <a href="https://discord.gg/SgehTay2" target="_blank">
+                                <img src="assets/logoDiscord.png" alt="Discord"></a>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
+                    <!-- About Me -->
+                    <div class="box" id="AboutMe">
+                        <br>
+                        <h1>About Me</h1>
+                        <h3>Lapys Games</h3>
+                        <img src="assets/LapysGames_Logo.png" style="width:20%; display: block; margin: auto" alt="Lapys Games Logo">
+                        <br>
+                        <p>
+                            I am Larissa Pychlau from Hamburg, Germany - the solo developer behind Lapys Games. 
+                        </p>
+                        <p>
+                            Banishing You is the first Lapys Games project.
+                            I believe that visual novels are a wonderful medium to tell a story while giving players the option to then make it their own.
+                            They allow to create a world using art and writing.
+                        </p>
+                        <p>
+                            I am responsible for the writing, coding and illustrating as well as designing assets.
+                        </p>
+                        <br>
+                        <img src="assets/LapysGames_Foto.png" style="width:20%; display: block; margin: auto" alt="Larissa Pychlau">
+                        <br><br>
+                    </div>
+
+                    <div class="box">
+                        <a href="impressum.html" target="_blank">Impressum</a>
+                    </div>
+
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!-- Banishing You -->
+
+                    <div class="box" id="BanishingYou">
+                        <img src="assets/BanishingYou/banishingYou_Logo.gif" alt="Banner" style="display: block; margin: auto; width: 200px; padding: 50px;">
+                        <iframe src="https://store.steampowered.com/widget/2926910/" frameborder="0" width="100%" height="190"></iframe>                               
+                        <h2>Press Kit</h2>
+                        <a href="https://www.dropbox.com/scl/fo/trvitgv4qxay51v0lg9xr/ANq2I88nxTdqAarh6VByIWc?rlkey=tfu98v8b1p5f3tdvou19kj5c3&st=uq885tfe&dl=0" target="_blank" style="display: block; text-align: center; margin: auto;">>>Images and Videos<<</a>
+                            <img src="assets/BanishingYou/BanishingYou_AboutSection_About.png" alt="About" style="display: block; margin: auto;">
+                        <p>
+                            Are you bored? Maybe a bit lost in your routine? Are your days slow, and nothing ever really happens?  
+                            Be that person in a video game too! Until a mysterious invitation alters everything and you are called into another world.
+                            <br><br>  
+                            Banishing You plunges you into a world of dreams where nothing is as it seems. After receiving a mysterious invitation, you find yourself transported to an extraordinary realm, summoned by four captivating strangers. As you grapple with their passive-aggressive comments and hidden motives, you uncover the true nature of your quest: to save their world and yours (Or maybe burn it all to the ground).
+                            <br><br>
+                            Banishing You is a visual novel with a heavy emphasis on interactions and choices. Make this adventure your own!
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nAHvBHWlycM" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
+                        <br>
+                        <br>
+                        <div id="full" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img src="assets/Website_Gallery_01.jpg" alt="Menu Screen">
+                                    <img src="assets/Website_Gallery_02.jpg" alt="In Game">
+                                    <img src="assets/Website_Gallery_03.jpg" alt="In Game">
+                                    <img src="assets/Website_Gallery_04.jpg" alt="Splash Art">
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#full')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <br>
+                        <img src="assets/BanishingYou/BanishingYou_AboutSection_Features.png" alt="Features" style="display: block; margin: auto;">
+                        <h2>The Player Character:</h2>Enter into the dream world as a non-descript, non-gendered main character that you get to name and play according to your own preferences, ensuring a uniquely personalized experience.
+                        <br><br>
+                        <h2>Multiple Endings:</h2>Experience a narrative with diverse outcomes, offering a range of very different endings shaped by your decisions throughout the game.
+                        <br>
+                        <img src="assets/BanishingYou/BanishingYou_AboutSection_Features_MultipleEndings.png" alt="Endings" style="display: block; margin: auto;">
+                        <br>
+                        <h2>Romance Options:</h2>Forge connections in the dream world with romancable male characters, each with distinct personalities. Uncover a surprise option that adds an unexpected twist to your journey. Or decide to forgo romance and focus on saving the world.
+                        <br>
+                        <img src="assets/BanishingYou/BanishingYou_AboutSection_Features_LIs.png" alt="LIs" style="display: block; margin: auto;">
+                        <br>
+                        <h2>Choice-Driven Gameplay:</h2>Navigate the dream world through a myriad of choices. Explore different paths and uncover the mysteries that await.
+                        <br><br>
+                        <h2>Achievements:</h2>Test your skills and unravel alternative aspects of the story with a variety of achievements.
+                        <br><br>
+                        <h2>Hand Drawn:</h2>Banishing you features hand drawn, animated backgrounds and sprites.
+                        <br>
+                        <img src="assets/BanishingYou/BanishingYou_AboutSection_Features_HandDrawn.png" alt="hand-drawn" style="display: block; margin: auto;">
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Menu -->
-        <div class="menubox">
-            <br>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#Top">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Features">Features</a></li>
-                    <li><a href="#PressKit">PressKit</a></li>
-                    <li><a href="#AboutMe">About Me</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Socials -->
-        <div class="box" id="Socials">
-          <div class="socials">
-              <p style="text-align: center;">
-                  <br>
-                  <a href="https://www.reddit.com/r/lapysgames/" target="_blank">
-                      <img src="assets/logoReddit.png" alt="Reddit"></a>
-                  <a href="https://twitter.com/LapysGames" target="_blank">
-                      <img src="assets/logoX.png" alt="Twitter"></a>
-                  <a href="https://www.youtube.com/channel/UCg125JrPUlolO5vH_4olS2w" target="_blank">
-                      <img src="assets/logoYoutube.png" alt="YouTube"></a>
-                  <a href="https://www.tiktok.com/@lapysgames" target="_blank">
-                      <img src="assets/logoTiktok.png" alt="TikTok"></a>
-                  <a href="https://discord.gg/SgehTay2" target="_blank">
-                      <img src="assets/logoDiscord.png" alt="Discord"></a>
-                  <br>
-              </p>
-              <p>
-                  <br>
-                  <iframe src="https://store.steampowered.com/widget/2926910/" frameborder="0" width="100%" height="190"></iframe>
-              </p>
-          </div>
-      </div>
-
-      <!-- About Section -->
-      <div class="box" id="About">
-        <img src="assets/BanishingYou_AboutSection_About.png" alt="About" style="display: block; margin: auto;">
-        <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nAHvBHWlycM" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
-            <br>
-        </p>
-        <p>
-            Are you bored? Maybe a bit lost in your routine? Are your days slow, and nothing ever really happens?  
-            Be that person in a video game too! Until a mysterious invitation alters everything and you are called into another world.
-            <br><br>  
-            Banishing You plunges you into a world of dreams where nothing is as it seems. After receiving a mysterious invitation, you find yourself transported to an extraordinary realm, summoned by four captivating strangers. As you grapple with their passive-aggressive comments and hidden motives, you uncover the true nature of your quest: to save their world and yours (Or maybe burn it all to the ground).
-            <br><br>
-            Banishing You is a visual novel with a heavy emphasis on interactions and choices. Make this adventure your own!
-        </p>
-    </div>
-
-    <div id="full" class="hide"><img></div>
-
-    <!-- Gallery -->
-    <div class="box">
-      <div class="gallery">
-          <p>
-              <img src="assets/Website_Gallery_01.jpg" alt="Menu Screen">
-              <img src="assets/Website_Gallery_02.jpg" alt="In Game">
-              <img src="assets/Website_Gallery_03.jpg" alt="In Game">
-              <img src="assets/Website_Gallery_04.jpg" alt="Splash Art">
-          </p>
-      </div>
-  </div>
-
-  <script>
-      document.querySelectorAll('img')
-      .forEach($img => $img.onclick = () => {
-          if (window.innerWidth > 768) {
-              const $full = document.querySelector('#full')
-              $full.classList.remove('hide')
-              $full.querySelector('img').src = $img.src
-              $full.onclick = () => $full.classList.add('hide')
-          }
-      })
-  </script>
-
-  <!-- Features -->
-  <div class="box" style="padding-top: 100px" id="Features">
-      <br><br>
-      <img src="assets/BanishingYou_AboutSection_Features.png" alt="Features" style="display: block; margin: auto;">
-      <h2>The Player Character:</h2>Enter into the dream world as a non-descript, non-gendered main character that you get to name and play according to your own preferences, ensuring a uniquely personalized experience.
-      <br><br>
-      <h2>Multiple Endings:</h2>Experience a narrative with diverse outcomes, offering a range of very different endings shaped by your decisions throughout the game.
-      <br>
-      <img src="assets/BanishingYou_AboutSection_Features_MultipleEndings.png" alt="Endings" style="display: block; margin: auto;">
-      <br>
-      <h2>Romance Options:</h2>Forge connections in the dream world with romancable male characters, each with distinct personalities. Uncover a surprise option that adds an unexpected twist to your journey. Or decide to forgo romance and focus on saving the world.
-      <br>
-      <img src="assets/BanishingYou_AboutSection_Features_LIs.png" alt="LIs" style="display: block; margin: auto;">
-      <br>
-      <h2>Choice-Driven Gameplay:</h2>Navigate the dream world through a myriad of choices. Explore different paths and uncover the mysteries that await.
-      <br><br>
-      <h2>Achievements:</h2>Test your skills and unravel alternative aspects of the story with a variety of achievements.
-      <br><br>
-      <h2>Hand Drawn:</h2>Banishing you features hand drawn, animated backgrounds and sprites.
-      <br>
-      <img src="assets/BanishingYou_AboutSection_Features_HandDrawn.png" alt="hand-drawn" style="display: block; margin: auto;">
-  </div>
-
-  <!-- Press Kit -->
-  <div class="box" id="PressKit">
-      <br>
-      <h1>Press Kit</h1>
-      <a href="https://www.dropbox.com/scl/fo/trvitgv4qxay51v0lg9xr/ANq2I88nxTdqAarh6VByIWc?rlkey=tfu98v8b1p5f3tdvou19kj5c3&st=uq885tfe&dl=0" target="_blank">>>Images and Videos<<</a>
-      <h3>Release Date:</h3>Q3
-      <h3>Pricing:</h3>4.99€ / $4.99
-      <h3>Supported Platforms:</h3>Steam
-      <h3>Socials:</h3>eMail: lapys.games@gmail.com || Discord: lil.rai || reddit: u/Lapys_Games || X: @LapysGames || TikTok: lapysgames || YouTube: @LapysGames
-  </div>
-
-  <!-- About Me -->
-  <div class="box" id="AboutMe">
-      <br>
-      <h1>About Me</h1>
-      <h3>Lapys Games</h3>
-      <img src="assets/LapysGames_Logo.png" style="width:20%; display: block; margin: auto" alt="Lapys Games Logo">
-      <br>
-      <p>
-          I am Larissa Pychlau from Hamburg, Germany - the solo developer behind Lapys Games. 
-      </p>
-      <p>
-          Banishing You is the first Lapys Games project.
-          I believe that visual novels are a wonderful medium to tell a story while giving players the option to then make it their own.
-          They allow to create a world using art and writing.
-      </p>
-      <p>
-          I am responsible for the writing, coding and illustrating as well as designing assets.
-      </p>
-      <br>
-      <img src="assets/LapysGames_Foto.png" style="width:20%; display: block; margin: auto" alt="Larissa Pychlau">
-      <br><br>
-  </div>
-
-  <div class="box">
-      <a href="impressum.html" target="_blank">Impressum</a>
-  </div>
-</div>
-</div>
-</body>
+        <script src="router.js"></script>
+    </body>
 </html>
