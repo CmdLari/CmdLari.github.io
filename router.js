@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const routes = {
         AboutMe: document.getElementById("AboutMe"),
-        BanishingYou: document.getElementById("BanishingYou")        
+        BanishingYou: document.getElementById("BanishingYou"),
+        Impressum: document.getElementById("Impressum")        
     };
 
     function hideAllSections() {
