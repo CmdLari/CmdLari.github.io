@@ -181,10 +181,18 @@ li {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-top {
   background-color: #010712;
   padding: 10px 0;
-  flex-wrap: wrap;
+}
+
+.navbar-bottom {
+  background-color: #010712;
+  padding: 10px 0;
 }
 
 .navbar ul {
@@ -211,6 +219,40 @@ li {
   color: #ddd9c0;
 }
 
+.navbar-divider {
+  width: 60%;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #aa863b, transparent);
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/***************************************************************************************************/
+/* BLOG */
+/***************************************************************************************************/
+
+.boxBlogMenu {
+  width: 20%;
+  float: left;
+  padding-right: 2%;
+}
+
+.boxBlog{
+  width: 75%;
+  float: left;
+}
+
+.blog-divider {
+  float: left;
+  width: 2px;
+  margin-right: 2%;
+  height: max-content;
+  background-color: #aa863b;
+  background: linear-gradient(to top, transparent, #aa863b, transparent);
+}
+
+
 /***************************************************************************************************/
 /* RESPONSIVENESS */
 /***************************************************************************************************/
@@ -222,6 +264,7 @@ li {
   .boxbox, .box, .boxAlways, .box img, iframe {
     width: 90%;
     margin: auto;
+    font-size: small;
   }
 
   .menubox {
@@ -229,10 +272,11 @@ li {
   }
 
   .navbar {
+
     width: 80%;
     margin: auto;
     font-size: small;
-    flex-direction: row; 
+    flex-direction: column; 
     justify-content: space-around;
     padding: 5px 0;
   }
@@ -246,6 +290,10 @@ li {
     font-size: x-small;
   }
 
+  .navbar-divider {
+    display: none;
+  }
+
   h1 {
     font-size: medium;
   }
@@ -256,5 +304,20 @@ li {
 
   .gallery img:hover {
     opacity: 1;
+  }
+
+  .blog-divider {
+    display: none;
+  }
+
+  .boxBlogMenu {
+    padding-left: 5%;
+    float: none;
+    width: 100%;
+  }
+
+  .boxBlog {
+    float: none;
+    width: 100%;
   }
 }
