@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const blogPosts = document.querySelectorAll('.blog');
     const blogList = document.getElementById('blog-list');
+    const clicked = 0;
 
     blogPosts.forEach(post => post.style.display = 'none');
 
@@ -54,9 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             blogPosts.forEach(p => p.style.display = 'none');
             document.getElementById(post.id).style.display = 'block';
+            clicked = 1;
         });
         
         listItem.appendChild(link);        
         blogList.appendChild(listItem);
     });
+    
+    if (clicked==0) {
+        const latestPost = blogPosts[blogPosts.length - 1];
+        latestPost.style.display = 'block';
+    } else {
+        const currentPost = document.getElementById(window.location.hash.substring(1));
+        if (currentPost) {
+            currentPost.style.display = 'block';
+        }
+    }
 });
