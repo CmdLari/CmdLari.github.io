@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
     if (clicked==0) {
-        const latestPost = blogPosts[blogPosts.length - 1];
+        const latestPost = blogPosts[0];
         latestPost.style.display = 'block';
     } else {
         const currentPost = document.getElementById(window.location.hash.substring(1));
