@@ -21,13 +21,16 @@
                         <br>
                         <nav class="navbar">
                             <ul class="navbar-top">
-                                <li><a href="#AboutMe">About Me</a></li>
-                            </ul>
-                            <hr class="navbar-divider">
-                            <ul class="navbar-bottom">
                                 <li><a href="#DevLog">DevLogs</a></li>
                                 <li style="color: #2e4167; font-family: 'Header', sans-serif; text-transform: uppercase">Games:</li>
                                 <li><a href="#BanishingYou">Banishing You</a></li>
+                            </ul>
+                            <hr class="navbar-divider">
+                            <ul class="navbar-bottom">
+                                <li><a href="#AboutMe">About Me</a></li>
+                                <li><a href="#Illustration">Illustration</a></li>
+                                <li><a href="#Photography">Photography</a></li>
+                                <li><a href="#Design">Design</a></li>
                             </ul>
                             <hr class="navbar-divider">
                         </nav>
@@ -81,7 +84,250 @@
                     <!------------------------------------------------------------------------------------------------------------------>
                     <!-- Illustration -->
                     <div class="box" id="Illustration">
-                        <!-- TODO -->
+                        <h1>Illustration</h1>
+                        <br>
+                        <div id="illufull" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration01.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration02.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration03.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration04.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration05.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration06.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration07.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration08.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration09.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration10.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration11.jpg" alt="Illustration">
+                                    <img class="Illustrationgallery-img" src="assets/Illustration/Illustration12.jpg" alt="Illustration">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.Illustrationgallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#illufull')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 75€ / hour || 500 € / day || 1800 € / Week 
+                            <br>
+                            <b style="color: #aa863b;">PACKAGES: </b>LOGO: from 800 € || BUSINESS CARDS: from 400 € || FLYER: from 300 € || EDITORIAL: from 300 € / Page | 1000 € / 10 Pages
+                            <br>
+                            <b style="color: #aa863b;">REFERENCES: </b> dm || you GmbH || GEERS || Fuchs trifft Hund || Jung Fruchtsäfte || Zsuzsannas || Superfood Sauces || Bartsch || Enno Lenze || Wefugees || Dr. Simin Amelsberg || MEDI>>RUN || Hanayu
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
+                        <br>
+                    </div>
+
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!-- Photography -->
+                    <div class="box" id="Photography">
+                        <h1>Band Photography</h1>
+                        <br>
+                        <div id="fullband" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band01.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band02.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band03.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band04.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band05.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band06.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band07.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band08.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band09.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band10.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band11.jpg" alt="Band Photography">
+                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band12.jpg" alt="Band Photography">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.bandgallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#fullband')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 1 h: 250 € || 2 h: 375 € || 3 h: 500 € || 1 d: 850 €
+                            <br>
+                            <b style="color: #aa863b;">REFERENCES: </b> Bad Blood Exhaust || Schwech und Pefel || Asuka || Words of Farewell || Heartbound || CCO || Melody of my Heartbeat
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <br>
+                        <h1>Portrait Photography</h1>
+                        <br>
+                        <div id="fullportrait" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait01.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait02.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait03.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait04.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait05.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait06.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait07.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait08.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait09.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait10.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait11.jpg" alt="Portrait Photography">
+                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait12.jpg" alt="Portrait Photography">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.Portraitgallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#fullportrait')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 1 h: 150 € || 2 h: 275 € || 3 h: 400 € || 1 d: 500 €
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <br>
+                        <h1>Business Photography</h1>
+                        <br>
+                        <div id="fullbusiness" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business01.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business02.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business03.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business04.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business05.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business06.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business07.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business08.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business09.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business10.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business11.jpg" alt="Business Photography">
+                                    <img class="businessgallery-img" src="assets/Photography/Business/Business12.jpg" alt="Business Photography">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.businessgallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#fullbusiness')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 1 h: 250 € || 2 h: 375 € || 3 h: 500 € || 1 d: 850 €
+                            <br>
+                            <b style="color: #aa863b;">REFERENCES: </b> Biotulin || Hanayu || dm || you GmbH || Atelier Claus Sander || Heilsarmee Hamburg || DGzRS || Buddels || EXPOnow
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <br>
+                        <h1>Wedding Photography</h1>
+                        <br>
+                        <div id="fullwedding" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding01.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding02.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding03.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding04.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding05.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding06.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding07.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding08.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding09.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding10.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding11.jpg" alt="Wedding Photography">
+                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding12.jpg" alt="Wedding Photography">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.Weddinggallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#fullwedding')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 1 h: 300 € || 2 h: 500 € || 3 h: 650 € || 1 d: 1000 €
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
+                    </div>
+
+ <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!------------------------------------------------------------------------------------------------------------------>
+                    <!-- Design -->
+                    <div class="box" id="Design">
+                        <h1>Design</h1>
+                        <br>
+                        <div id="designfull" class="hide"><img></div>
+                        <div class="gallery">
+                                <p>
+                                    <img class="Designgallery-img" src="assets/Design/Design01.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design02.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design03.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design04.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design05.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design06.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design07.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design08.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design09.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design10.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design11.jpg" alt="Design">
+                                    <img class="Designgallery-img" src="assets/Design/Design12.jpg" alt="Design">                                    
+                                </p>
+                        </div>
+                        <script>
+                            document.querySelectorAll('.Designgallery-img')
+                            .forEach($img => $img.onclick = () => {
+                                if (window.innerWidth > 768) {
+                                    const $full = document.querySelector('#designfull')
+                                    $full.classList.remove('hide')
+                                    $full.querySelector('img').src = $img.src
+                                    $full.onclick = () => $full.classList.add('hide')
+                                }
+                            })
+                        </script>
+                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                            <b style="color: #aa863b;">PRICES: </b> 75€ / hour || 500 € / day || 1800 € / Week 
+                            <br>
+                            <b style="color: #aa863b;">PACKAGES: </b>LOGO: from 800 € || BUSINESS CARDS: from 400 € || FLYER: from 300 € || EDITORIAL: from 300 € / Page | 1000 € / 10 Pages
+                            <br>
+                            <b style="color: #aa863b;">REFERENCES: </b> dm || you GmbH || GEERS || Fuchs trifft Hund || Jung Fruchtsäfte || Zsuzsannas || Superfood Sauces || Bartsch || Enno Lenze || Wefugees || Dr. Simin Amelsberg || MEDI>>RUN || Hanayu
+                            <br>
+                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                        </p>
+                        <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
+                        <br>
                     </div>
 
                     <!------------------------------------------------------------------------------------------------------------------>
@@ -105,7 +351,7 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/nAHvBHWlycM" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
                         <br>
                         <br>
-                        <div id="full" class="hide"><img></div>
+                        <div id="fullby" class="hide"><img></div>
                         <div class="gallery">
                                 <p>
                                     <img class="bygallery-img" src="assets/BanishingYou/BanishingYou_Website_Gallery_01.jpg" alt="Menu Screen">
@@ -118,7 +364,7 @@
                             document.querySelectorAll('.bygallery-img')
                             .forEach($img => $img.onclick = () => {
                                 if (window.innerWidth > 768) {
-                                    const $full = document.querySelector('#full')
+                                    const $full = document.querySelector('#fullby')
                                     $full.classList.remove('hide')
                                     $full.querySelector('img').src = $img.src
                                     $full.onclick = () => $full.classList.add('hide')
@@ -208,12 +454,11 @@
                     <!-- DevLog -->
                     <div class="box" id="DevLog">
                         <div class="boxBlogMenu">
-                            <ul id="blog-list">
+                            <ul id="blog-list" style="list-style: none;">
                             </ul>
                         </div>
                         <p class="blog-divider">
                         <div class="boxBlog">
-                            <br>
                             <div class="blog" id="Banishing You - Devlog #10 - 2024/06/12">
                                 <h3>What's this?</h3>
                                 <br>
