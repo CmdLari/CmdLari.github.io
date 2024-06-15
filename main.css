@@ -290,7 +290,7 @@ li {
   }
 
   .navbar-divider {
-    display: none;
+      width: 100%;
   }
 
   h1 {
