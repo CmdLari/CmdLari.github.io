@@ -75,3 +75,75 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const oowblogPosts = document.querySelectorAll('.oowblog');
+    const oowblogList = document.getElementById('oowblog-list');
+    const clicked = 0;
+
+    oowblogPosts.forEach(post => post.style.display = 'none');
+
+    oowblogPosts.forEach(post => {
+
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        
+        link.href = `#${post.id}`;
+        
+        link.textContent = post.id;
+        
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            oowblogPosts.forEach(p => p.style.display = 'none');
+            document.getElementById(post.id).style.display = 'block';
+            clicked = 1;
+        });
+        
+        listItem.appendChild(link);        
+        oowblogList.appendChild(listItem);
+    });
+    
+    if (clicked==0) {
+        const latestPost = oowblogPosts[0];
+        latestPost.style.display = 'block';
+    } else {
+        const currentPost = document.getElementById(window.location.hash.substring(1));
+        if (currentPost) {
+            currentPost.style.display = 'block';
+        }
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const workButton = document.getElementById("work-button");
+    const travelButton = document.getElementById("travel-button");
+    const workContent = document.getElementById("work-content");
+    const travelContent = document.getElementById("travel-content");
+
+    workButton.addEventListener("click", function () {
+        workContent.classList.remove("hide");
+        travelContent.classList.add("hide");
+    });
+
+    travelButton.addEventListener("click", function () {
+        travelContent.classList.remove("hide");
+        workContent.classList.add("hide");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const byButton = document.getElementById("by-button");
+    const oowButton = document.getElementById("oow-button");
+    const byContent = document.getElementById("by-content");
+    const oowContent = document.getElementById("oow-content");
+
+    byButton.addEventListener("click", function () {
+        byContent.classList.remove("hide");
+        oowContent.classList.add("hide");
+    });
+
+    oowButton.addEventListener("click", function () {
+        oowContent.classList.remove("hide");
+        byContent.classList.add("hide");
+    });
+});
