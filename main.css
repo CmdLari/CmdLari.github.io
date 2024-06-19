@@ -175,6 +175,7 @@ li {
   padding: 10px 20px;
   cursor: pointer;
   font-family: 'Header', sans-serif;
+  font-size: small;
   margin: 5px;
   transition: background-color 0.3s;
 }
@@ -342,5 +343,10 @@ li {
   .boxBlog {
     float: none;
     width: 100%;
+  }
+
+  .toggle-buttons button {
+  font-size: xs-small;
+  padding: 5px 10px;
   }
 }
