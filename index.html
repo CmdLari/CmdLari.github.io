@@ -138,156 +138,168 @@
                     <!------------------------------------------------------------------------------------------------------------------>
                     <!-- Photography -->
                     <div class="box" id="Photography">
-                        <h1>Band Photography</h1>
                         <br>
-                        <div id="fullband" class="hide"><img></div>
-                        <div class="gallery">
-                                <p>
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band01.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band02.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band03.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band04.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band05.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band06.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band07.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band08.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band09.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band10.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band11.jpg" alt="Band Photography">
-                                    <img class="bandgallery-img" src="assets/Photography/Bands/Band12.jpg" alt="Band Photography">                                    
-                                </p>
+                        <div class="toggle-buttons">
+                            <button id="work-button">WORK</button>
+                            <button id="travel-button">TRAVEL</button>
                         </div>
-                        <script>
-                            document.querySelectorAll('.bandgallery-img')
-                            .forEach($img => $img.onclick = () => {
-                                if (window.innerWidth > 768) {
-                                    const $full = document.querySelector('#fullband')
-                                    $full.classList.remove('hide')
-                                    $full.querySelector('img').src = $img.src
-                                    $full.onclick = () => $full.classList.add('hide')
-                                }
-                            })
-                        </script>
-                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
-                            <b style="color: #aa863b;">PRICES: </b> 1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
-                            <br>
-                            <b style="color: #aa863b;">REFERENCES: </b> Bad Blood Exhaust || Schwech und Pefel || Asuka || Words of Farewell || Heartbound || CCO || Melody of my Heartbeat
-                            <br>
-                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
-                        </p>
                         <br>
-                        <h1>Portrait Photography</h1>
-                        <br>
-                        <div id="fullportrait" class="hide"><img></div>
-                        <div class="gallery">
-                                <p>
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait01.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait02.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait03.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait04.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait05.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait06.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait07.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait08.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait09.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait10.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait11.jpg" alt="Portrait Photography">
-                                    <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait12.jpg" alt="Portrait Photography">                                    
-                                </p>
+                        <div id="work-content">
+                            <h1>Band Photography</h1>
+                            <br>
+                            <div id="fullband" class="hide"><img></div>
+                            <div class="gallery">
+                                    <p>
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band01.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band02.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band03.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band04.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band05.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band06.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band07.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band08.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band09.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band10.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band11.jpg" alt="Band Photography">
+                                        <img class="bandgallery-img" src="assets/Photography/Bands/Band12.jpg" alt="Band Photography">                                    
+                                    </p>
+                            </div>
+                            <script>
+                                document.querySelectorAll('.bandgallery-img')
+                                .forEach($img => $img.onclick = () => {
+                                    if (window.innerWidth > 768) {
+                                        const $full = document.querySelector('#fullband')
+                                        $full.classList.remove('hide')
+                                        $full.querySelector('img').src = $img.src
+                                        $full.onclick = () => $full.classList.add('hide')
+                                    }
+                                })
+                            </script>
+                            <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                                <b style="color: #aa863b;">PRICES: </b> 1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
+                                <br>
+                                <b style="color: #aa863b;">REFERENCES: </b> Bad Blood Exhaust || Schwech und Pefel || Asuka || Words of Farewell || Heartbound || CCO || Melody of my Heartbeat
+                                <br>
+                                <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                            </p>
+                            <br>
+                            <h1>Portrait Photography</h1>
+                            <br>
+                            <div id="fullportrait" class="hide"><img></div>
+                            <div class="gallery">
+                                    <p>
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait01.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait02.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait03.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait04.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait05.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait06.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait07.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait08.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait09.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait10.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait11.jpg" alt="Portrait Photography">
+                                        <img class="Portraitgallery-img" src="assets/Photography/Portrait/Portrait12.jpg" alt="Portrait Photography">                                    
+                                    </p>
+                            </div>
+                            <script>
+                                document.querySelectorAll('.Portraitgallery-img')
+                                .forEach($img => $img.onclick = () => {
+                                    if (window.innerWidth > 768) {
+                                        const $full = document.querySelector('#fullportrait')
+                                        $full.classList.remove('hide')
+                                        $full.querySelector('img').src = $img.src
+                                        $full.onclick = () => $full.classList.add('hide')
+                                    }
+                                })
+                            </script>
+                            <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                                <b style="color: #aa863b;">PRICES: </b> 1 h: 150€ || 2 h: 275€ || 3 h: 400€ || 1 d: 500€
+                                <br>
+                                <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                            </p>
+                            <br>
+                            <h1>Business Photography</h1>
+                            <br>
+                            <div id="fullbusiness" class="hide"><img></div>
+                            <div class="gallery">
+                                    <p>
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business01.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business02.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business03.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business04.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business05.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business06.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business07.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business08.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business09.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business10.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business11.jpg" alt="Business Photography">
+                                        <img class="businessgallery-img" src="assets/Photography/Business/Business12.jpg" alt="Business Photography">                                    
+                                    </p>
+                            </div>
+                            <script>
+                                document.querySelectorAll('.businessgallery-img')
+                                .forEach($img => $img.onclick = () => {
+                                    if (window.innerWidth > 768) {
+                                        const $full = document.querySelector('#fullbusiness')
+                                        $full.classList.remove('hide')
+                                        $full.querySelector('img').src = $img.src
+                                        $full.onclick = () => $full.classList.add('hide')
+                                    }
+                                })
+                            </script>
+                            <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                                <b style="color: #aa863b;">PRICES: </b> 1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
+                                <br>
+                                <b style="color: #aa863b;">REFERENCES: </b> Biotulin || Hanayu || dm || you GmbH || Atelier Claus Sander || Heilsarmee Hamburg || DGzRS || Buddels || EXPOnow
+                                <br>
+                                <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                            </p>
+                            <br>
+                            <h1>Wedding Photography</h1>
+                            <br>
+                            <div id="fullwedding" class="hide"><img></div>
+                            <div class="gallery">
+                                    <p>
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding01.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding02.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding03.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding04.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding05.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding06.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding07.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding08.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding09.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding10.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding11.jpg" alt="Wedding Photography">
+                                        <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding12.jpg" alt="Wedding Photography">                                    
+                                    </p>
+                            </div>
+                            <script>
+                                document.querySelectorAll('.Weddinggallery-img')
+                                .forEach($img => $img.onclick = () => {
+                                    if (window.innerWidth > 768) {
+                                        const $full = document.querySelector('#fullwedding')
+                                        $full.classList.remove('hide')
+                                        $full.querySelector('img').src = $img.src
+                                        $full.onclick = () => $full.classList.add('hide')
+                                    }
+                                })
+                            </script>
+                            <p style="text-align: center; color: #ddd9c0; font-size: small;">
+                                <b style="color: #aa863b;">PRICES: </b> 1 h: 300€ || 2 h: 500€ || 3 h: 650€ || 1 d: 1000€
+                                <br>
+                                <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
+                            </p>
+                            <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
                         </div>
-                        <script>
-                            document.querySelectorAll('.Portraitgallery-img')
-                            .forEach($img => $img.onclick = () => {
-                                if (window.innerWidth > 768) {
-                                    const $full = document.querySelector('#fullportrait')
-                                    $full.classList.remove('hide')
-                                    $full.querySelector('img').src = $img.src
-                                    $full.onclick = () => $full.classList.add('hide')
-                                }
-                            })
-                        </script>
-                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
-                            <b style="color: #aa863b;">PRICES: </b> 1 h: 150€ || 2 h: 275€ || 3 h: 400€ || 1 d: 500€
-                            <br>
-                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
-                        </p>
-                        <br>
-                        <h1>Business Photography</h1>
-                        <br>
-                        <div id="fullbusiness" class="hide"><img></div>
-                        <div class="gallery">
-                                <p>
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business01.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business02.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business03.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business04.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business05.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business06.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business07.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business08.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business09.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business10.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business11.jpg" alt="Business Photography">
-                                    <img class="businessgallery-img" src="assets/Photography/Business/Business12.jpg" alt="Business Photography">                                    
-                                </p>
+                        <div id="travel-content" class="hide">
+                            <p style="text-align: center; color: #ddd9c0; font-size: x-large;">
+                                <b style="color: #aa863b;">Coming Soon
+                            </p>                        
                         </div>
-                        <script>
-                            document.querySelectorAll('.businessgallery-img')
-                            .forEach($img => $img.onclick = () => {
-                                if (window.innerWidth > 768) {
-                                    const $full = document.querySelector('#fullbusiness')
-                                    $full.classList.remove('hide')
-                                    $full.querySelector('img').src = $img.src
-                                    $full.onclick = () => $full.classList.add('hide')
-                                }
-                            })
-                        </script>
-                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
-                            <b style="color: #aa863b;">PRICES: </b> 1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
-                            <br>
-                            <b style="color: #aa863b;">REFERENCES: </b> Biotulin || Hanayu || dm || you GmbH || Atelier Claus Sander || Heilsarmee Hamburg || DGzRS || Buddels || EXPOnow
-                            <br>
-                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
-                        </p>
-                        <br>
-                        <h1>Wedding Photography</h1>
-                        <br>
-                        <div id="fullwedding" class="hide"><img></div>
-                        <div class="gallery">
-                                <p>
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding01.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding02.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding03.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding04.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding05.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding06.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding07.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding08.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding09.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding10.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding11.jpg" alt="Wedding Photography">
-                                    <img class="Weddinggallery-img" src="assets/Photography/Wedding/Wedding12.jpg" alt="Wedding Photography">                                    
-                                </p>
-                        </div>
-                        <script>
-                            document.querySelectorAll('.Weddinggallery-img')
-                            .forEach($img => $img.onclick = () => {
-                                if (window.innerWidth > 768) {
-                                    const $full = document.querySelector('#fullwedding')
-                                    $full.classList.remove('hide')
-                                    $full.querySelector('img').src = $img.src
-                                    $full.onclick = () => $full.classList.add('hide')
-                                }
-                            })
-                        </script>
-                        <p style="text-align: center; color: #ddd9c0; font-size: small;">
-                            <b style="color: #aa863b;">PRICES: </b> 1 h: 300€ || 2 h: 500€ || 3 h: 650€ || 1 d: 1000€
-                            <br>
-                            <b style="color: #aa863b;">CONTACT:</b> larisspychlau@gmail.com || +49 176 80 76 76 78
-                        </p>
-                        <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
                     </div>
-
  <!------------------------------------------------------------------------------------------------------------------>
                     <!------------------------------------------------------------------------------------------------------------------>
                     <!------------------------------------------------------------------------------------------------------------------>
@@ -459,461 +471,483 @@
                     <!------------------------------------------------------------------------------------------------------------------>
                     <!-- DevLog -->
                     <div class="box" id="DevLog">
-                        <div class="boxBlogMenu">
-                            <ul id="blog-list" style="list-style: none;">
-                            </ul>
+                        <br>
+                        <div class="toggle-buttons">
+                            <button id="by-button">BANISHING YOU</button>
+                            <button id="oow-button">OUT OF WATER</button>
                         </div>
-                        <p class="blog-divider">
-                        <div class="boxBlog">
-                            <div class="blog" id="Banishing You - Devlog #10 - 2024/06/12">
-                                <h3>What's this?</h3>
-                                <br>
-                                Welcome to a new instalment of this devlog and welcome to me slowly learning how to write one.
-                                <br>
-                                This is the devlog for **Banishing You**, a visual novel in which you enter a dreamworld and try to save the world - one way or another.
-                                <br>
-                                <br>
-                                <h3>What's Happened?</h3>
-                                <br>
-                                The game is in the hands of my wonderful beta testers and the first feedbacks are back. This has lead to some screen upgrades and A LOT of fixed typos. On the bureaucratic side of things I am making sure to secure all the game's assets migrating to Obsidian, cleaning up the code before putting a final build on steam and just taking inventory.
-                                <br>
-                                I have also written up a checklist for all possible paths the player can take and all possible outcomes. Once the beta testers are done I will walk them all, put it on steam and walk them again.
-                                <br>
-                                Part of taking inventory  is also archiving pieces of code I will want to reuse in future projects, creating a sample project with better directories, cleaner workflows, etc.
-                                <br>
-                                So yeah: There'll definitely be a next one!
-                                <br>
-                                <br>
-                                <h3>Current Challenges and Future Tasks:</h3>
-                                <br>
-                                Definitely the marketing. So much the marketing. I HATE marketing. But I'll have to be better about it, learn, adapt and give it my best shot! 
-                                <br>
-                                So far TikTok has produced the most reliable results even though my clips definitely aren't doing well and probably for good reason. 
-                                <br>
-                                So now I am studying up on what works, what doesn't and how I want to proceed with it.
-                                <br>
-                                <br>
-                                <h3>Some Pretty Visuals for You</h3>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_10.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                This is what you get if you ask your testers
-                                <br>
-                                <br>
-                                <h3>Where to Find out More:</h3>
-                                <br>
-                                <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
-                                <br>
-                                <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
-                                <br>
-                                <br>
-                                (✿◡‿◡) See you soon in a dream  
-                                <br>
-                                <br>
+                        <br>
+                        <div id="by-content">
+                            <div class="boxBlogMenu">
+                                <ul id="blog-list" style="list-style: none;">
+                                </ul>
                             </div>
-                            <div class="blog" id="Banishing You - Devlog #9 - 2024/06/05">
-                                <h3>What's this?</h3>
-                                <br>
-                                Good evening!
-                                <br>
-                                This is another episode of the Banishing You-Devlog.
-                                <br>
-                                Banishing You is a visual novel set in this world and the dream realm where you get tasked with saving the world (or maybe ending mankind?) and possibly finding love while doing so.
-                                <br>
-                                It is mysterious, pretty, toxic, depressing and weird.
-                                <br>
-                                And I hope one day some people will enjoy making it their own story!
-                                <br>
-                                <br>
-                                <h3>What's Happened?</h3>
-                                <br>
-                                Weeeeelllll...
-                                <br>
-                                The game's finished!!!11!!!!1
-                                <br>
-                                At least the game is complete... It is now off to my beloved, wonderful testers who'll probably tear me a new one and get rid of typos, unsightly visual mishaps and tragic wording choices.
-                                <br>
-                                I've already gotten some feedback and integrated stuff from quality of life adjustments to.. yeah... typo erasure.
-                                <br>
-                                But I am also very happy to report that the game got positive feedback in general and people enjoy the story, choices and outcomes so MAYBE give it a go when it releases in August and make it an inhabitant of your ever growing wishlist for now? For your convenience I've put links at the bottom of this post ;)
-                                <br>
-                                While my players are busy I've quadrupled my marketing efforts which is a low bar since I hate this part with a passion and am chronically bad at it. Which is hilarious seeing as I am a studied graphics designer and should probably like this more? I don't know. Someone do it for me and I'll provide cute images...
-                                <br>
-                                Alas I am giving it my best shot and can now report the reddit community can be quite sweet and uplifting (social bubbles be blessed).
-                                <br>
-                                And there is another tiny little thing happening when I have a spare minute or should be doing something else: I have a new idea. For a new game. With a new, fresh, overflowing Kanban board...
-                                <br>
-                                So that is being nourished and defined and I am excited to give it my all. But I can't right now or I KNOW for a fact that my whole plan will just blow up .
-                                <br>
-                                <br>
-                                <h3>Current Challenges and Future Tasks:</h3>
-                                <br>
-                                Currently feedback is the most important thing. Adjacent to this is a diagram I will need to make with all possible paths and versions of paths so I can walk them myself (again) and check if they work on a technical level. Especially since my testers annoyingly seem to aim for good endings all while I was hoping to get some tear stained reviews.
-                                <br>
-                                Once both of these are done I will have to check that cloud saving is properly implemented and bribe a way smarter friend with some pizza so he can ensure the upload to steam is properly done.
-                                <br>
-                                BUT
-                                <br>
-                                We are getting there! Hurray!
-                                <br>
-                                <br>
-                                <h3>Some Pretty Visuals for You</h3>
-                                <br>
-                                I made a stupid flyer for a university party.
-                                <br>
-                                Enjoy that:
-                                <br>
-                                <img src="assets/DevLog/BY_DL_09.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>
-                                <h3>Where to Find out More:</h3>
-                                <br>
-                                <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
-                                <br>
-                                <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
-                                <br>
-                                <br>
-                                (✿◡‿◡) See you soon in a dream  
-                                <br>
-                                <br>
+                            <p class="blog-divider"></p>
+                            <div class="boxBlog">
+                                <div class="blog" id="Banishing You - Devlog #10 - 2024/06/12">
+                                    <h3>What's this?</h3>
+                                    <br>
+                                    Welcome to a new instalment of this devlog and welcome to me slowly learning how to write one.
+                                    <br>
+                                    This is the devlog for **Banishing You**, a visual novel in which you enter a dreamworld and try to save the world - one way or another.
+                                    <br>
+                                    <br>
+                                    <h3>What's Happened?</h3>
+                                    <br>
+                                    The game is in the hands of my wonderful beta testers and the first feedbacks are back. This has lead to some screen upgrades and A LOT of fixed typos. On the bureaucratic side of things I am making sure to secure all the game's assets migrating to Obsidian, cleaning up the code before putting a final build on steam and just taking inventory.
+                                    <br>
+                                    I have also written up a checklist for all possible paths the player can take and all possible outcomes. Once the beta testers are done I will walk them all, put it on steam and walk them again.
+                                    <br>
+                                    Part of taking inventory  is also archiving pieces of code I will want to reuse in future projects, creating a sample project with better directories, cleaner workflows, etc.
+                                    <br>
+                                    So yeah: There'll definitely be a next one!
+                                    <br>
+                                    <br>
+                                    <h3>Current Challenges and Future Tasks:</h3>
+                                    <br>
+                                    Definitely the marketing. So much the marketing. I HATE marketing. But I'll have to be better about it, learn, adapt and give it my best shot! 
+                                    <br>
+                                    So far TikTok has produced the most reliable results even though my clips definitely aren't doing well and probably for good reason. 
+                                    <br>
+                                    So now I am studying up on what works, what doesn't and how I want to proceed with it.
+                                    <br>
+                                    <br>
+                                    <h3>Some Pretty Visuals for You</h3>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_10.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    This is what you get if you ask your testers
+                                    <br>
+                                    <br>
+                                    <h3>Where to Find out More:</h3>
+                                    <br>
+                                    <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
+                                    <br>
+                                    <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
+                                    <br>
+                                    <br>
+                                    (✿◡‿◡) See you soon in a dream  
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #9 - 2024/06/05">
+                                    <h3>What's this?</h3>
+                                    <br>
+                                    Good evening!
+                                    <br>
+                                    This is another episode of the Banishing You-Devlog.
+                                    <br>
+                                    Banishing You is a visual novel set in this world and the dream realm where you get tasked with saving the world (or maybe ending mankind?) and possibly finding love while doing so.
+                                    <br>
+                                    It is mysterious, pretty, toxic, depressing and weird.
+                                    <br>
+                                    And I hope one day some people will enjoy making it their own story!
+                                    <br>
+                                    <br>
+                                    <h3>What's Happened?</h3>
+                                    <br>
+                                    Weeeeelllll...
+                                    <br>
+                                    The game's finished!!!11!!!!1
+                                    <br>
+                                    At least the game is complete... It is now off to my beloved, wonderful testers who'll probably tear me a new one and get rid of typos, unsightly visual mishaps and tragic wording choices.
+                                    <br>
+                                    I've already gotten some feedback and integrated stuff from quality of life adjustments to.. yeah... typo erasure.
+                                    <br>
+                                    But I am also very happy to report that the game got positive feedback in general and people enjoy the story, choices and outcomes so MAYBE give it a go when it releases in August and make it an inhabitant of your ever growing wishlist for now? For your convenience I've put links at the bottom of this post ;)
+                                    <br>
+                                    While my players are busy I've quadrupled my marketing efforts which is a low bar since I hate this part with a passion and am chronically bad at it. Which is hilarious seeing as I am a studied graphics designer and should probably like this more? I don't know. Someone do it for me and I'll provide cute images...
+                                    <br>
+                                    Alas I am giving it my best shot and can now report the reddit community can be quite sweet and uplifting (social bubbles be blessed).
+                                    <br>
+                                    And there is another tiny little thing happening when I have a spare minute or should be doing something else: I have a new idea. For a new game. With a new, fresh, overflowing Kanban board...
+                                    <br>
+                                    So that is being nourished and defined and I am excited to give it my all. But I can't right now or I KNOW for a fact that my whole plan will just blow up .
+                                    <br>
+                                    <br>
+                                    <h3>Current Challenges and Future Tasks:</h3>
+                                    <br>
+                                    Currently feedback is the most important thing. Adjacent to this is a diagram I will need to make with all possible paths and versions of paths so I can walk them myself (again) and check if they work on a technical level. Especially since my testers annoyingly seem to aim for good endings all while I was hoping to get some tear stained reviews.
+                                    <br>
+                                    Once both of these are done I will have to check that cloud saving is properly implemented and bribe a way smarter friend with some pizza so he can ensure the upload to steam is properly done.
+                                    <br>
+                                    BUT
+                                    <br>
+                                    We are getting there! Hurray!
+                                    <br>
+                                    <br>
+                                    <h3>Some Pretty Visuals for You</h3>
+                                    <br>
+                                    I made a stupid flyer for a university party.
+                                    <br>
+                                    Enjoy that:
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_09.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>
+                                    <h3>Where to Find out More:</h3>
+                                    <br>
+                                    <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
+                                    <br>
+                                    <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
+                                    <br>
+                                    <br>
+                                    (✿◡‿◡) See you soon in a dream  
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #8 - 2024/05/29">
+                                    <h3>What's this?</h3>
+                                    <br>
+                                    Good evening!
+                                    <br>
+                                    This is another episode of the **Banishing You**-Devlog. A devlog I am still figuring out to write, so stay with me :D
+                                    <br>
+                                    Banishing You is a visual novel set in this world and the dream realm where you get tasked with saving the world (or maybe ending mankind?) and possibly finding love while doing so.
+                                    <br>
+                                    It is mysterious, pretty, toxic, depressing and weird.
+                                    <br>
+                                    And I hope one day some people will enjoy making it their own story!
+                                    <br>
+                                    <br>
+                                    <h3>What's Happened?</h3>
+                                    <br>
+                                    Well aside from learning how to write a devlog I am now in the final spurt of developing the game.
+                                    <br>
+                                    The story is more than 90% done and I JUST finished the last CGs.
+                                    <br>
+                                    It's exiting and unbelievably tiring.
+                                    <br>
+                                    This is truly the time to learn how to do things better next time.
+                                    <br>
+                                    And believe me there are so, so many things I could have approached better.
+                                    <br>
+                                    But aside from using this space to tell you I am within schedule, I will very, very likely make the deadline with plenty of testing and it's all coming together, I will hand out some recommendations that have worked for me:
+                                    <br>
+                                    <br>
+                                    <li>To-Do lists: Just for the daily stuff, including the game. I love to-do lists that let me set recurring tasks, habits and unique todos. I use Habitica for this plus I use ChatGPT to prepare daily schedules to fit everything that needs to be done in one tiny day</li>
+                                    <li>Kanban boards: This is amazing for keeping track of what needs to be done for the project, including priorities and status of the task. Seeing it slowly empty is very rewarding. I use Trello</li>
+                                    <li>A good place to put the script, notes and general layout. There are a few out there. I used Google Docs and am now migrating to Obsidian</li>
+                                    <li>A good back up! This is so very important. Mine are Dropbox and Github</li>
+                                    <br>
+                                    Good organisation is a huge element and WILL reduce stress, frustration and missed deadlines.
+                                    <br>
+                                    But I will not lie, right now I have 10-12h days of uni, this project and whatever else I have to do before I flop down and play a game or read and it is incredibly taxing and I am sure there are people out there working harder on their game. Game development is a lot of work (and great fun) so the more you prepare and reduce unnecessary holdups the better.
+                                    <br>
+                                    <br>
+                                    <h3>Current Challenges and Future Tasks:</h3>
+                                    <br>
+                                    The next steps for Banishing You will be thorough testing - not only by me but by my troupe of wonderful volunteers to make sure typos are at a minimum and every potential route works and feels complete.
+                                    Otherwise I will only need to make sure steam cloud saving is properly implemented, something for which I have a guide ready and that should not pose a big obstacle (Jinxed it right here).
+                                    <br>
+                                    <br>
+                                    <h3>Some Pretty Visuals for You</h3>
+                                    <br>
+                                    These are the very last CGs I had to finish:
+                                    <img src="assets/DevLog/BY_DL_08.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>
+                                    <h3>Where to Find out More:</h3>
+                                    <br>
+                                    <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
+                                    <br>
+                                    <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
+                                    <br>
+                                    <br>
+                                    (✿◡‿◡) See you soon in a dream  
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #7 - 2024/05/22">
+                                    Last week: 
+                                    <br>
+                                    The major todo right now definitely is writing the various endings, keeping them different and interesting and then transforming them to actual, playable script with sound and visuals.
+                                    <br>
+                                    It's quite amazing seeing the story come to its different, logical conclusions. Very satisfying too.
+                                    <br>
+                                    <br>
+                                    Schedule:
+                                    <br>
+                                    I have now passed the halfway mark and am on schedule, hoping to finish everything by the 15th of June and hand it to my test players so I can have the game polished by August and upload it to steam as a finished project.
+                                    <br>
+                                    Right now it appears I am well within this timeline and I will do my best to keep it that way so there's enough time for the necessary cleanup and testing.
+                                    <br>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_07.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>
+                                    Milestones:
+                                    <br>
+                                    I am amazed to have gotten 100+ wishlistings by now.
+                                    <br>
+                                    As I work solo - including the marketing - I only have limited capacity to advertise the game. I am mainly using tiktok, a platform I have no previous experience with and I am so happy to see random strangers interested in my first project!
+                                    <br>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_07B.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>
+                                    (✿◡‿◡) See you soon in a dream
+                                    <br>
+                                    <br>
+                                    <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #6 - 2024/05/09">
+                                    Did you know: If you set up a variable to remember a VERY important decision the player can make and then give the player the ability to go back on that decision, you really, REALLY should account for that when finally giving them their ending?
+                                    <br>
+                                    Like… REALLY!                                                                  
+                                    <br>
+                                    Thank you so much to my tester who found this, had us both dumbfounded on the weirdly mismatching dialogue and then had me realise the error of my ways.
+                                    <br>                                                                  
+                                    I love you!
+                                    <br>                                                                  
+                                    Thank you to that same tester for handing me the single best review I could wish for, which I immediately transformed into a clip which I will put below.  
+                                    <br>  
+                                    BEHOLD
+                                    <br>
+                                    <br>                                  
+                                    <img src="assets/DevLog/BY_DL_06.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>                                                                  
+                                    This leads me to this week’s little learning lesson.
+                                    <br>
+                                    It’s not directly related to making the game, but rather to the marketing.
+                                    <br>
+                                    I found making small clips for features of the game or general “things i want to highlight" an incredibly stress reducing workflow for getting marketing material, especially for tiktok.
+                                    <br>
+                                    I’ve made clips for reviews, love interests, gameplay, my logo and so on, that I now can mix and match depending on what I need.
+                                    <br>
+                                    Making these clips is a lot quicker and easier than cutting a full trailer, even a short one. I highly recommend trying that.
+                                    <br>
+                                    Mostly because so far tiktok has by far been the platform to most reliably get wishlistings from.
+                                    <br>
+                                    <br>                                                                  
+                                    Thank you for attending this psa…  
+                                    <br>
+                                    <br>                                  
+                                    See you next week ♥
+                                    <br>
+                                    Larissa
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #5 - 2024/05/03">
+                                    Hello and welcome to early summer!
+                                    <br>
+                                    What a great time to sit inside! And I actually mean it. It’s way too hot already and I will probably melt soon…
+                                    <br>
+                                    <br>                                  
+                                    I am still putting finishing touches on the game, mainly writing out the various endings, trying to put different spins on them, polishing sounds, art and wording.
+                                    <br>                                                         
+                                    But one thing I really came to appreciate lately and absolutely want to integrate in my next project (yep that is happening) is better organisation.
+                                    <br>                                                                  
+                                    I have refactored this project several times already and I will not do so again. It’s now too late and the changes would only be for my convenience while risking working storylines.
+                                    <br>                                                                  
+                                    But I will absolutely make a repository after finishing this, that will collect neat things I have already, like transforms, screens and similar lines of code, that aren’t necessarily hard to do, but annoying to rediscover.
+                                    <br>                                                                  
+                                    Renpy allows for very messy code. I am almost sure you can theoretically make a whole game within a singular file. 
+                                    <br>                                                                  
+                                    But breaking it down, sorting it into things like images, variables, routes, chapters, screens, etc will make your life so, so much easier.  
+                                    <br>  
+                                    So what I will do is make a repository with neat little scripts just to remind myself I was ready to work in an orderly fashion at some point…                                
+                                    <br>                                  
+                                    <br>
+                                    As for the current project: It is going well. I am within the deadline and confident the release on the 14th of August is well within reason.
+                                    <br>                                                                  
+                                    Now I want to make sure that the various endings (12, not counting the LI variations) offer true variety. Yes, there will be more and less similar endings, but each one has something unique to them. Some might be similar at first glance but will very much differ in tone. (one very similar one is essentially a good and a bad outcome but set within a similar scene).  
+                                    <br>  
+                                    I do want for my players to explore different options and see several behaviour patterns come to have consequences.
+                                    <br>
+                                    <br>
+                                    But for now look at my gorgeous mess of order. Can’t wait to do better next time!  
+                                    <br>
+                                    <br>                                  
+                                    <img src="assets/DevLog/BY_DL_05.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                    <br>
+                                    <br>
+                                    This is only a small excerpt as some of the filenames would give away spoilers but it’s the background stuff so prolly more interesting than just the chapters.                                                            
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #4 - 2024/04/24">
+                                    What is happening right now?
+                                    <br>    
+                                    I am reaching the point where my Kanban board is starting to clear out and it feels amazing.
+                                    <br>
+                                    I am deep into writing the endings and drawing the artwork for each one. 
+                                    <br>
+                                    Once this is done the only thing left on my checklist is the implementation of cloud saving and thorough testing of every route (Together with my wonderful test players).
+                                    <br>
+                                    It was almost weird finishing the first ending and testing it and instead of the usual “Thank you for testing the Beta Version of Banishing You.” the actual end card popped up.
+                                    <br>
+                                    I implemented it and it still somewhat caught me by surprise.
+                                    <br>
+                                    It felt really good.
+                                    <br>
+                                    <br>  
+                                    I will not pretend however the final effort isn’t extremely taxing. Everything is prepared, every graphical element done, mechanics clear and all that is left to do is putting the pieces together. So there is little room left for new creative efforts. (Besides the illustrations)
+                                    <br>                                
+                                    That is somewhat frustrating at times, since it feels like I am not really making anything new. All I assemble now I prepared earlier.
+                                    <br>                                
+                                    But then again it is absolutely satisfying every time another piece clicks, another little, final step is done.
+                                    <br>
+                                    <br>                              
+                                    Knowing I am on track with my schedule also takes away a lot of the anxiety I still had, when I put a date down in the steam shop (though it is only visible to me, as the public announcement says Q3). Knowing my Kanban board is slowly clearing out is a welcome, new experience as a first time developer.
+                                    <br>                                                                 
+                                    Overall it feels a little like a nice goodbye celebration.
+                                    <br>
+                                    I know what cake and sparkly wine I will get on release day and I know I will very, very likely make it.
+                                    <br>                                                                  
+                                    After that I can only hope someone will enjoy playing this game as much as I loved making it!
+                                    <br>
+                                    <br>                                  
+                                    <img src="assets/DevLog/BY_DL_04.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #3 - 2024/04/10">
+                                    It is getting serious.
+                                    <br>
+                                    <br>
+                                    The 4th of my 5 chapters/acts is finished.                               
+                                    <br>
+                                    <br>
+                                    This has taught me just how much player decisions and the variables those spawn can come back to haunt you.
+                                    I want to give my players agency and though the story might take a player to the same place no matter how he answers the question, what happens there might be very different. I want my characters to remember if a player insulted them, flirted or just offered friendship.
+                                    But that means the game has to remember his behaviour and more importantly there needs to be different dialogues happening. So one decision doubles the length of a scene. Or triples it, if we take the example from earlier.
+                                    <br>
+                                    <br>
+                                    Now this sounds like I am complaining BUT it’s really nice seeing it play out, once it has been written and implemented. 
+                                    Player agency isn’t limited to different paths with different settings. It can also just determine how a player is treated and what they will ultimately accomplish.                                
+                                    I decided to opt for this second version and have the story culminate in a wide selection of very different endings. So while the story might always implement similar steps to get to its end, how you do these will yield very, very different results.                                
+                                    <br>
+                                    This also meant I got to implement a few horror elements to the game. Since there is at least one route the player can take that demands those.
+                                    <br>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_03.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
+                                    <br>
+                                    <br>
+                                    Doing horror in a visual novel proved to be a new challenge and I tried to solve it mostly through dialogue with some audio and visual enhancement.                            
+                                    <br>
+                                    <br>
+                                    And now for the major breakthrough.
+                                    Which is not directly coding or writing related.
+                                    But since I am 75% finished with the GUI and menu features almost completely done, I have finally applied for a steam partner account - a very anticlimactic deed. 
+                                    Now I am stuck with waiting for approval/verification and if you should be in a similar situation this is my moment to warn you, that making that account and having it verified will take a lot of time and reading. 
+                                    I got my assets prepared, the website is ready to be updated (No TC announcement anymore. Yippiiieee) and the wishlist trailer is exported.                                
+                                    <br>
+                                    <br>
+                                    So for anyone who’s trying to do the same or who’s just curious about the work that goes into the stuff that isn’t even directly related to making the game, here is a list of things I prepared for the steam account and announcement. This does not include the publication, but only to the point of giving people the opportunity to wishlist.
+                                    <br>
+                                    <br>
+                                    <li>A trailer for youtube and the shop page with a CTA to wishlist</li>                            
+                                    <li>A vertical version for social media</li>                                
+                                    <li>Screenshots</li>                                    
+                                    <li>A website with socials, steam link, about section, key features, gallery, the trailer, info about me and a press kit</li>                                    
+                                    <li>Visual assets for the steam account, such as cover art. - You can find wonderful guides for this online</li>
+                                    <br>
+                                    <br>
+                                    This is all stuff that will take days of labour to complete, but it is really cool seeing the game logo and characters in a cover art or icon! Makes it feel a lot more real. And now I am anxious. And happy :D Wish me luck!
+                                    <br>
+                                    <br>
+                                    See you next week ♥
+                                    <br>
+                                    Larissa
+                                    <br>
+                                    <br>
+                                    UPDATE (since i write these devlogs 2 days prior to releasing them)  
+                                    The game has been greenlit to show up in the steam store ♥  
+                                    I am crazy happy right now and very, very drained :D
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #2 - 2024/04/03">
+                                    Or my slow descent into madness…
+                                    Or why you should never ever touch coding…
+                                    Or why it’s all worth it when the tiny rush of happiness sets in when stuff works out..
+                                    (●'◡'●)
+                                    <br>
+                                    <br>
+                                    So let’s do this!
+                                    <br>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_02.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
+                                    <br>
+                                    <br>
+                                    My test players asked me to add a small lore lexicon to the game’s menu.  
+                                    Just something to read up on the characters the player meets.
+                                    Simple enough… or so I thought.
+                                    Adding this screen became a journey filled with pain, misery and sadness - Mainly because I had only slept 3 hours the night in between the two days the majority of the code was written on. But that is besides the point.
+                                    <br>
+                                    <br>
+                                    To make a short story long:
+                                    I started studying software engineering at my university without any prior knowledge. A strategy I do not recommend btw.
+                                    But I soon noticed the fun part of the coding part of my studies (and don’t be fooled: A majority of classes is more math than coding) was figuring out the logical yes/no questions that form the conditions under which a program acts. (Or doesn’t…)
+                                    The bad side of this is, that while finally figuring that problem out causes a beautiful rush of adrenaline, happiness and exactly 2.3 seconds of feeling like a wunderkind, those precious, tiny moments are surrounded by hours of agonizing, torturous work. (hyperbole in the name of mediocre writing)  
+                                    <br>
+                                    <br>                                
+                                    So this brings us back to the issue at hand:
+                                    This little legendarium needed some things to happen. Namely:
+                                    <br>
+                                    <br>
+                                    <li>Images for the buttons and the displayed characters</li>                                    
+                                    <li>Code that would not only bring the thing “to life" but would also (somewhat) make sure a player would not see information, that they had not acquired in game (plus have that information updated for a tasty little surprise late in the game)</li>
+                                    <li>Actual, brief texts to fill the pages</li>
+                                    <br>
+                                    <br>
+                                    None of this came as easy, as I had hoped.
+                                    The screen displaying all of this would permanently show on top of other game content. I googled. I read the actual documentation(!!!). I read dozens of error messages. I asked reddit. Then I figured out how to completely circumvent the issue by setting it up completely differently from what I had thought to be a pretty clever way. 
+                                    And then it worked… And I got my rush. And the rush ended and then I still had so much more work left to do.
+                                    But damn! Being able to tell my kind, wonderful testers they’d get their feature was so satisfying!                                
+                                    <br>
+                                    <br>
+                                    So ultimately I will retract my earlier words: Go and try all this on your own. It is kinda worth it ♥
+                                    <br>
+                                    <br>                            
+                                    See you next week ♥
+                                    <br>
+                                    Larissa
+                                </div>
+                                <div class="blog" id="Banishing You - Devlog #1 - 2024/03/27">
+                                    I am late to the game. I have never written a devlog before and my game is 70% or more done.
+                                    However I wanted to start doing this for myself and for potential players to show them how this project came to be.
+                                    <br>        
+                                    <br>
+                                    So let’s do this!                                 
+                                    <br>
+                                    <br>
+                                    <img src="assets/DevLog/BY_DL_01.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
+                                    <br>
+                                    <br>                             
+                                    My last few hours of coding involved building this beautiful screen.  
+                                    It might not look like much right now - showing a placeholder text and all - BUT this screen will show the endings the player has unlocked with a small description of what happened and the splash arts. I had to shrink the GIO buttons a little bit to fit it in there, the variables to unlock the endings (and hopefully get a steam achievement at some point) are already placed. All that’s left to do is writing the endings. Easy enough… 
+                                    <br>
+                                    <br>                                                                                               
+                                    The rest of the past two weeks was mainly spent on the actual writing part.
+                                    <br>
+                                    <br>                                                             
+                                    Every time I finish a chapter (I am done with chapter 3 of 5) I once again struggle with the threatening presence of an empty page.                                    
+                                    However I think I finally found a solution. Just writing. It sounds stupid but hear me out: It is often said that when you start out you should not aim for quality but just write down all the dumb first thoughts and rewrite later. And it works! Even in between chapters. And after a few stumbling awkward sentences I usually get a feeling what the scene should look like, what the mood should be and how my characters should behave themselves and then I can rectify all the bad, hasty text I already put to the page.
+                                    It is incredibly exciting to know that I am approaching the final stages of this project. I am deep in the 4th phase after which I plan to start the marketing and set up the steam page. 
+                                    In the game this means this is the final chapter for the player to actually make decisions, unlock or consciously pass on new routes and fulfill their quest.  
+                                    The final chapter will deliver them a personal resolution to their journey. And don’t get me wrong. That “chapter" will be terrifying to approach. I am planning on 12 endings, not counting the variations of the different LIs, but I do want the player to feel like their choices mattered. And once they see what they achieved I’d love for them to be curious how else the story could have ended.
+                                    <br>
+                                    <br>
+                                    And that is the reason for that little (at the moment somewhat shy looking) screen up there. To show players what they achieved and give them the ability to reminisce.                                   
+                                    I hope you will love clicking through it as much as I loved putting it all together.  
+                                    <br>
+                                    <br>  
+                                    See you next week ♥
+                                    <br>
+                                    <br>
+                                    Larissa                            
+                                </div>
                             </div>
-                            <div class="blog" id="Banishing You - Devlog #8 - 2024/05/29">
-                                <h3>What's this?</h3>
-                                <br>
-                                Good evening!
-                                <br>
-                                This is another episode of the **Banishing You**-Devlog. A devlog I am still figuring out to write, so stay with me :D
-                                <br>
-                                Banishing You is a visual novel set in this world and the dream realm where you get tasked with saving the world (or maybe ending mankind?) and possibly finding love while doing so.
-                                <br>
-                                It is mysterious, pretty, toxic, depressing and weird.
-                                <br>
-                                And I hope one day some people will enjoy making it their own story!
-                                <br>
-                                <br>
-                                <h3>What's Happened?</h3>
-                                <br>
-                                Well aside from learning how to write a devlog I am now in the final spurt of developing the game.
-                                <br>
-                                The story is more than 90% done and I JUST finished the last CGs.
-                                <br>
-                                It's exiting and unbelievably tiring.
-                                <br>
-                                This is truly the time to learn how to do things better next time.
-                                <br>
-                                And believe me there are so, so many things I could have approached better.
-                                <br>
-                                But aside from using this space to tell you I am within schedule, I will very, very likely make the deadline with plenty of testing and it's all coming together, I will hand out some recommendations that have worked for me:
-                                <br>
-                                <br>
-                                <li>To-Do lists: Just for the daily stuff, including the game. I love to-do lists that let me set recurring tasks, habits and unique todos. I use Habitica for this plus I use ChatGPT to prepare daily schedules to fit everything that needs to be done in one tiny day</li>
-                                <li>Kanban boards: This is amazing for keeping track of what needs to be done for the project, including priorities and status of the task. Seeing it slowly empty is very rewarding. I use Trello</li>
-                                <li>A good place to put the script, notes and general layout. There are a few out there. I used Google Docs and am now migrating to Obsidian</li>
-                                <li>A good back up! This is so very important. Mine are Dropbox and Github</li>
-                                <br>
-                                Good organisation is a huge element and WILL reduce stress, frustration and missed deadlines.
-                                <br>
-                                But I will not lie, right now I have 10-12h days of uni, this project and whatever else I have to do before I flop down and play a game or read and it is incredibly taxing and I am sure there are people out there working harder on their game. Game development is a lot of work (and great fun) so the more you prepare and reduce unnecessary holdups the better.
-                                <br>
-                                <br>
-                                <h3>Current Challenges and Future Tasks:</h3>
-                                <br>
-                                The next steps for Banishing You will be thorough testing - not only by me but by my troupe of wonderful volunteers to make sure typos are at a minimum and every potential route works and feels complete.
-                                Otherwise I will only need to make sure steam cloud saving is properly implemented, something for which I have a guide ready and that should not pose a big obstacle (Jinxed it right here).
-                                <br>
-                                <br>
-                                <h3>Some Pretty Visuals for You</h3>
-                                <br>
-                                These are the very last CGs I had to finish:
-                                <img src="assets/DevLog/BY_DL_08.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>
-                                <h3>Where to Find out More:</h3>
-                                <br>
-                                <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
-                                <br>
-                                <a href="https://discord.com/invite/BSJBeqf3qd" target="_blank">Lapys Games on Discord</a>
-                                <br>
-                                <br>
-                                (✿◡‿◡) See you soon in a dream  
-                                <br>
-                                <br>
+                        </div>
+                        <div id="oow-content">
+                            <div class="boxBlogMenu">
+                                <ul id="oowblog-list" style="list-style: none;">
+                                </ul>
                             </div>
-                            <div class="blog" id="Banishing You - Devlog #7 - 2024/05/22">
-                                Last week: 
-                                <br>
-                                The major todo right now definitely is writing the various endings, keeping them different and interesting and then transforming them to actual, playable script with sound and visuals.
-                                <br>
-                                It's quite amazing seeing the story come to its different, logical conclusions. Very satisfying too.
-                                <br>
-                                <br>
-                                Schedule:
-                                <br>
-                                I have now passed the halfway mark and am on schedule, hoping to finish everything by the 15th of June and hand it to my test players so I can have the game polished by August and upload it to steam as a finished project.
-                                <br>
-                                Right now it appears I am well within this timeline and I will do my best to keep it that way so there's enough time for the necessary cleanup and testing.
-                                <br>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_07.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>
-                                Milestones:
-                                <br>
-                                I am amazed to have gotten 100+ wishlistings by now.
-                                <br>
-                                As I work solo - including the marketing - I only have limited capacity to advertise the game. I am mainly using tiktok, a platform I have no previous experience with and I am so happy to see random strangers interested in my first project!
-                                <br>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_07B.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>
-                                (✿◡‿◡) See you soon in a dream
-                                <br>
-                                <br>
-                                <a href="https://store.steampowered.com/app/2926910/Banishing_You/" target="_blank">Banishing You on Steam</a>
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #6 - 2024/05/09">
-                                Did you know: If you set up a variable to remember a VERY important decision the player can make and then give the player the ability to go back on that decision, you really, REALLY should account for that when finally giving them their ending?
-                                <br>
-                                Like… REALLY!                                                                  
-                                <br>
-                                Thank you so much to my tester who found this, had us both dumbfounded on the weirdly mismatching dialogue and then had me realise the error of my ways.
-                                <br>                                                                  
-                                I love you!
-                                <br>                                                                  
-                                Thank you to that same tester for handing me the single best review I could wish for, which I immediately transformed into a clip which I will put below.  
-                                <br>  
-                                BEHOLD
-                                <br>
-                                <br>                                  
-                                <img src="assets/DevLog/BY_DL_06.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>                                                                  
-                                This leads me to this week’s little learning lesson.
-                                <br>
-                                It’s not directly related to making the game, but rather to the marketing.
-                                <br>
-                                I found making small clips for features of the game or general “things i want to highlight" an incredibly stress reducing workflow for getting marketing material, especially for tiktok.
-                                <br>
-                                I’ve made clips for reviews, love interests, gameplay, my logo and so on, that I now can mix and match depending on what I need.
-                                <br>
-                                Making these clips is a lot quicker and easier than cutting a full trailer, even a short one. I highly recommend trying that.
-                                <br>
-                                Mostly because so far tiktok has by far been the platform to most reliably get wishlistings from.
-                                <br>
-                                <br>                                                                  
-                                Thank you for attending this psa…  
-                                <br>
-                                <br>                                  
-                                See you next week ♥
-                                <br>
-                                Larissa
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #5 - 2024/05/03">
-                                Hello and welcome to early summer!
-                                <br>
-                                What a great time to sit inside! And I actually mean it. It’s way too hot already and I will probably melt soon…
-                                <br>
-                                <br>                                  
-                                I am still putting finishing touches on the game, mainly writing out the various endings, trying to put different spins on them, polishing sounds, art and wording.
-                                <br>                                                         
-                                But one thing I really came to appreciate lately and absolutely want to integrate in my next project (yep that is happening) is better organisation.
-                                <br>                                                                  
-                                I have refactored this project several times already and I will not do so again. It’s now too late and the changes would only be for my convenience while risking working storylines.
-                                <br>                                                                  
-                                But I will absolutely make a repository after finishing this, that will collect neat things I have already, like transforms, screens and similar lines of code, that aren’t necessarily hard to do, but annoying to rediscover.
-                                <br>                                                                  
-                                Renpy allows for very messy code. I am almost sure you can theoretically make a whole game within a singular file. 
-                                <br>                                                                  
-                                But breaking it down, sorting it into things like images, variables, routes, chapters, screens, etc will make your life so, so much easier.  
-                                <br>  
-                                So what I will do is make a repository with neat little scripts just to remind myself I was ready to work in an orderly fashion at some point…                                
-                                <br>                                  
-                                <br>
-                                As for the current project: It is going well. I am within the deadline and confident the release on the 14th of August is well within reason.
-                                <br>                                                                  
-                                Now I want to make sure that the various endings (12, not counting the LI variations) offer true variety. Yes, there will be more and less similar endings, but each one has something unique to them. Some might be similar at first glance but will very much differ in tone. (one very similar one is essentially a good and a bad outcome but set within a similar scene).  
-                                <br>  
-                                I do want for my players to explore different options and see several behaviour patterns come to have consequences.
-                                <br>
-                                <br>
-                                But for now look at my gorgeous mess of order. Can’t wait to do better next time!  
-                                <br>
-                                <br>                                  
-                                <img src="assets/DevLog/BY_DL_05.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                                <br>
-                                <br>
-                                This is only a small excerpt as some of the filenames would give away spoilers but it’s the background stuff so prolly more interesting than just the chapters.                                                            
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #4 - 2024/04/24">
-                                What is happening right now?
-                                <br>    
-                                I am reaching the point where my Kanban board is starting to clear out and it feels amazing.
-                                <br>
-                                I am deep into writing the endings and drawing the artwork for each one. 
-                                <br>
-                                Once this is done the only thing left on my checklist is the implementation of cloud saving and thorough testing of every route (Together with my wonderful test players).
-                                <br>
-                                It was almost weird finishing the first ending and testing it and instead of the usual “Thank you for testing the Beta Version of Banishing You.” the actual end card popped up.
-                                <br>
-                                I implemented it and it still somewhat caught me by surprise.
-                                <br>
-                                It felt really good.
-                                <br>
-                                <br>  
-                                I will not pretend however the final effort isn’t extremely taxing. Everything is prepared, every graphical element done, mechanics clear and all that is left to do is putting the pieces together. So there is little room left for new creative efforts. (Besides the illustrations)
-                                <br>                                
-                                That is somewhat frustrating at times, since it feels like I am not really making anything new. All I assemble now I prepared earlier.
-                                <br>                                
-                                But then again it is absolutely satisfying every time another piece clicks, another little, final step is done.
-                                <br>
-                                <br>                              
-                                Knowing I am on track with my schedule also takes away a lot of the anxiety I still had, when I put a date down in the steam shop (though it is only visible to me, as the public announcement says Q3). Knowing my Kanban board is slowly clearing out is a welcome, new experience as a first time developer.
-                                <br>                                                                 
-                                Overall it feels a little like a nice goodbye celebration.
-                                <br>
-                                I know what cake and sparkly wine I will get on release day and I know I will very, very likely make it.
-                                <br>                                                                  
-                                After that I can only hope someone will enjoy playing this game as much as I loved making it!
-                                <br>
-                                <br>                                  
-                                <img src="assets/DevLog/BY_DL_04.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">                             
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #3 - 2024/04/10">
-                                It is getting serious.
-                                <br>
-                                <br>
-                                The 4th of my 5 chapters/acts is finished.                               
-                                <br>
-                                <br>
-                                This has taught me just how much player decisions and the variables those spawn can come back to haunt you.
-                                I want to give my players agency and though the story might take a player to the same place no matter how he answers the question, what happens there might be very different. I want my characters to remember if a player insulted them, flirted or just offered friendship.
-                                But that means the game has to remember his behaviour and more importantly there needs to be different dialogues happening. So one decision doubles the length of a scene. Or triples it, if we take the example from earlier.
-                                <br>
-                                <br>
-                                Now this sounds like I am complaining BUT it’s really nice seeing it play out, once it has been written and implemented. 
-                                Player agency isn’t limited to different paths with different settings. It can also just determine how a player is treated and what they will ultimately accomplish.                                
-                                I decided to opt for this second version and have the story culminate in a wide selection of very different endings. So while the story might always implement similar steps to get to its end, how you do these will yield very, very different results.                                
-                                <br>
-                                This also meant I got to implement a few horror elements to the game. Since there is at least one route the player can take that demands those.
-                                <br>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_03.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
-                                <br>
-                                <br>
-                                Doing horror in a visual novel proved to be a new challenge and I tried to solve it mostly through dialogue with some audio and visual enhancement.                            
-                                <br>
-                                <br>
-                                And now for the major breakthrough.
-                                Which is not directly coding or writing related.
-                                But since I am 75% finished with the GUI and menu features almost completely done, I have finally applied for a steam partner account - a very anticlimactic deed. 
-                                Now I am stuck with waiting for approval/verification and if you should be in a similar situation this is my moment to warn you, that making that account and having it verified will take a lot of time and reading. 
-                                I got my assets prepared, the website is ready to be updated (No TC announcement anymore. Yippiiieee) and the wishlist trailer is exported.                                
-                                <br>
-                                <br>
-                                So for anyone who’s trying to do the same or who’s just curious about the work that goes into the stuff that isn’t even directly related to making the game, here is a list of things I prepared for the steam account and announcement. This does not include the publication, but only to the point of giving people the opportunity to wishlist.
-                                <br>
-                                <br>
-                                <li>A trailer for youtube and the shop page with a CTA to wishlist</li>                            
-                                <li>A vertical version for social media</li>                                
-                                <li>Screenshots</li>                                    
-                                <li>A website with socials, steam link, about section, key features, gallery, the trailer, info about me and a press kit</li>                                    
-                                <li>Visual assets for the steam account, such as cover art. - You can find wonderful guides for this online</li>
-                                <br>
-                                <br>
-                                This is all stuff that will take days of labour to complete, but it is really cool seeing the game logo and characters in a cover art or icon! Makes it feel a lot more real. And now I am anxious. And happy :D Wish me luck!
-                                <br>
-                                <br>
-                                See you next week ♥
-                                <br>
-                                Larissa
-                                <br>
-                                <br>
-                                UPDATE (since i write these devlogs 2 days prior to releasing them)  
-                                The game has been greenlit to show up in the steam store ♥  
-                                I am crazy happy right now and very, very drained :D
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #2 - 2024/04/03">
-                                Or my slow descent into madness…
-                                Or why you should never ever touch coding…
-                                Or why it’s all worth it when the tiny rush of happiness sets in when stuff works out..
-                                (●'◡'●)
-                                <br>
-                                <br>
-                                So let’s do this!
-                                <br>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_02.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
-                                <br>
-                                <br>
-                                My test players asked me to add a small lore lexicon to the game’s menu.  
-                                Just something to read up on the characters the player meets.
-                                Simple enough… or so I thought.
-                                Adding this screen became a journey filled with pain, misery and sadness - Mainly because I had only slept 3 hours the night in between the two days the majority of the code was written on. But that is besides the point.
-                                <br>
-                                <br>
-                                To make a short story long:
-                                I started studying software engineering at my university without any prior knowledge. A strategy I do not recommend btw.
-                                But I soon noticed the fun part of the coding part of my studies (and don’t be fooled: A majority of classes is more math than coding) was figuring out the logical yes/no questions that form the conditions under which a program acts. (Or doesn’t…)
-                                The bad side of this is, that while finally figuring that problem out causes a beautiful rush of adrenaline, happiness and exactly 2.3 seconds of feeling like a wunderkind, those precious, tiny moments are surrounded by hours of agonizing, torturous work. (hyperbole in the name of mediocre writing)  
-                                <br>
-                                <br>                                
-                                So this brings us back to the issue at hand:
-                                This little legendarium needed some things to happen. Namely:
-                                <br>
-                                <br>
-                                <li>Images for the buttons and the displayed characters</li>                                    
-                                <li>Code that would not only bring the thing “to life" but would also (somewhat) make sure a player would not see information, that they had not acquired in game (plus have that information updated for a tasty little surprise late in the game)</li>
-                                <li>Actual, brief texts to fill the pages</li>
-                                <br>
-                                <br>
-                                None of this came as easy, as I had hoped.
-                                The screen displaying all of this would permanently show on top of other game content. I googled. I read the actual documentation(!!!). I read dozens of error messages. I asked reddit. Then I figured out how to completely circumvent the issue by setting it up completely differently from what I had thought to be a pretty clever way. 
-                                And then it worked… And I got my rush. And the rush ended and then I still had so much more work left to do.
-                                But damn! Being able to tell my kind, wonderful testers they’d get their feature was so satisfying!                                
-                                <br>
-                                <br>
-                                So ultimately I will retract my earlier words: Go and try all this on your own. It is kinda worth it ♥
-                                <br>
-                                <br>                            
-                                See you next week ♥
-                                <br>
-                                Larissa
-                            </div>
-                            <div class="blog" id="Banishing You - Devlog #1 - 2024/03/27">
-                                I am late to the game. I have never written a devlog before and my game is 70% or more done.
-                                However I wanted to start doing this for myself and for potential players to show them how this project came to be.
-                                <br>        
-                                <br>
-                                So let’s do this!                                 
-                                <br>
-                                <br>
-                                <img src="assets/DevLog/BY_DL_01.png" alt="Blog Visual" style="padding-top: 20px; padding-bottom: 20px;">   
-                                <br>
-                                <br>                             
-                                My last few hours of coding involved building this beautiful screen.  
-                                It might not look like much right now - showing a placeholder text and all - BUT this screen will show the endings the player has unlocked with a small description of what happened and the splash arts. I had to shrink the GIO buttons a little bit to fit it in there, the variables to unlock the endings (and hopefully get a steam achievement at some point) are already placed. All that’s left to do is writing the endings. Easy enough… 
-                                <br>
-                                <br>                                                                                               
-                                The rest of the past two weeks was mainly spent on the actual writing part.
-                                <br>
-                                <br>                                                             
-                                Every time I finish a chapter (I am done with chapter 3 of 5) I once again struggle with the threatening presence of an empty page.                                    
-                                However I think I finally found a solution. Just writing. It sounds stupid but hear me out: It is often said that when you start out you should not aim for quality but just write down all the dumb first thoughts and rewrite later. And it works! Even in between chapters. And after a few stumbling awkward sentences I usually get a feeling what the scene should look like, what the mood should be and how my characters should behave themselves and then I can rectify all the bad, hasty text I already put to the page.
-                                It is incredibly exciting to know that I am approaching the final stages of this project. I am deep in the 4th phase after which I plan to start the marketing and set up the steam page. 
-                                In the game this means this is the final chapter for the player to actually make decisions, unlock or consciously pass on new routes and fulfill their quest.  
-                                The final chapter will deliver them a personal resolution to their journey. And don’t get me wrong. That “chapter" will be terrifying to approach. I am planning on 12 endings, not counting the variations of the different LIs, but I do want the player to feel like their choices mattered. And once they see what they achieved I’d love for them to be curious how else the story could have ended.
-                                <br>
-                                <br>
-                                And that is the reason for that little (at the moment somewhat shy looking) screen up there. To show players what they achieved and give them the ability to reminisce.                                   
-                                I hope you will love clicking through it as much as I loved putting it all together.  
-                                <br>
-                                <br>  
-                                See you next week ♥
-                                <br>
-                                <br>
-                                Larissa                            
-                            </div>
+                            <p class="blog-divider"></p>
+                            <div class="boxBlog">
+                                <div class="oowblog" id="COMING SOON">
+                                    <p>
+                                        COMING SOON
+                                    </p>
+                                </div>
+                            </div>gi
                         </div>
                     </div>
                     <div class="boxAlways">
