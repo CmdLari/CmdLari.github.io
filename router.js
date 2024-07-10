@@ -1,3 +1,5 @@
+// Main Sub Pages
+
 document.addEventListener("DOMContentLoaded", function () {
     const routes = {
         AboutMe: document.getElementById("AboutMe"),
@@ -37,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         handleHashChange();
     }
 });
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const blogPosts = document.querySelectorAll('.blog');
@@ -114,22 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const workButton = document.getElementById("work-button");
-    const travelButton = document.getElementById("travel-button");
-    const workContent = document.getElementById("work-content");
-    const travelContent = document.getElementById("travel-content");
 
-    workButton.addEventListener("click", function () {
-        workContent.classList.remove("hide");
-        travelContent.classList.add("hide");
-    });
-
-    travelButton.addEventListener("click", function () {
-        travelContent.classList.remove("hide");
-        workContent.classList.add("hide");
-    });
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const byButton = document.getElementById("by-button");
@@ -145,5 +134,25 @@ document.addEventListener("DOMContentLoaded", function () {
     oowButton.addEventListener("click", function () {
         oowContent.classList.remove("hide");
         byContent.classList.add("hide");
+    });
+});
+
+
+// Photography selector
+
+document.addEventListener("DOMContentLoaded", function () {
+    const workButton = document.getElementById("work-button");
+    const travelButton = document.getElementById("travel-button");
+    const workContent = document.getElementById("work-content");
+    const travelContent = document.getElementById("travel-content");
+
+    workButton.addEventListener("click", function () {
+        workContent.classList.remove("hide");
+        travelContent.classList.add("hide");
+    });
+
+    travelButton.addEventListener("click", function () {
+        travelContent.classList.remove("hide");
+        workContent.classList.add("hide");
     });
 });
