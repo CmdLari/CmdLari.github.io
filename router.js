@@ -1,4 +1,4 @@
-// Main Sub Pages
+/////////// Main Sub Pages
 
 document.addEventListener("DOMContentLoaded", function () {
     const routes = {
@@ -42,20 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+/////////// Load Blogs for Banishing You
+
 document.addEventListener("DOMContentLoaded", function () {
     const blogPosts = document.querySelectorAll('.blog');
     const blogList = document.getElementById('blog-list');
-    const clicked = 0;
+    let clicked = 0;
 
     blogPosts.forEach(post => post.style.display = 'none');
 
     blogPosts.forEach(post => {
-
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         
         link.href = `#${post.id}`;
-        
         link.textContent = post.id;
         
         link.addEventListener('click', function (e) {
@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", function () {
             clicked = 1;
         });
         
-        listItem.appendChild(link);        
+        listItem.appendChild(link);
         blogList.appendChild(listItem);
     });
     
-    if (clicked==0) {
+    if (clicked == 0) {
         const latestPost = blogPosts[0];
         latestPost.style.display = 'block';
     } else {
@@ -80,20 +80,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+
+/////////// Load Blogs for OOW
+
 document.addEventListener("DOMContentLoaded", function () {
     const oowblogPosts = document.querySelectorAll('.oowblog');
     const oowblogList = document.getElementById('oowblog-list');
-    const clicked = 0;
+    let clicked = 0;
 
     oowblogPosts.forEach(post => post.style.display = 'none');
 
     oowblogPosts.forEach(post => {
-
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         
         link.href = `#${post.id}`;
-        
         link.textContent = post.id;
         
         link.addEventListener('click', function (e) {
@@ -103,11 +105,11 @@ document.addEventListener("DOMContentLoaded", function () {
             clicked = 1;
         });
         
-        listItem.appendChild(link);        
+        listItem.appendChild(link);
         oowblogList.appendChild(listItem);
     });
     
-    if (clicked==0) {
+    if (clicked == 0) {
         const latestPost = oowblogPosts[0];
         latestPost.style.display = 'block';
     } else {
@@ -119,6 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+/////////// Choose Blog
 
 document.addEventListener("DOMContentLoaded", function () {
     const byButton = document.getElementById("by-button");
@@ -134,11 +140,22 @@ document.addEventListener("DOMContentLoaded", function () {
     oowButton.addEventListener("click", function () {
         oowContent.classList.remove("hide");
         byContent.classList.add("hide");
+
+        // Trigger OOW blog loading
+        const oowblogPosts = document.querySelectorAll('.oowblog');
+        if (oowblogPosts.length > 0) {
+            oowblogPosts.forEach(post => post.style.display = 'none');
+            oowblogPosts[0].style.display = 'block';
+        }
     });
 });
 
 
-// Photography selector
+
+
+
+
+//////////// Photography selector
 
 document.addEventListener("DOMContentLoaded", function () {
     const workButton = document.getElementById("work-button");
