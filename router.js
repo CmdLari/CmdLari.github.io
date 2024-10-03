@@ -92,21 +92,21 @@ document.addEventListener("DOMContentLoaded", function () {
     oowblogPosts.forEach(post => post.style.display = 'none');
 
     oowblogPosts.forEach(post => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
+        const listItemOOW = document.createElement('li');
+        const linkOOW = document.createElement('a');
         
-        link.href = `#${post.id}`;
-        link.textContent = post.id;
+        linkOOW.href = `#${post.id}`;
+        linkOOW.textContent = post.id;
         
-        link.addEventListener('click', function (e) {
+        linkOOW.addEventListener('click', function (e) {
             e.preventDefault();
             oowblogPosts.forEach(p => p.style.display = 'none');
             document.getElementById(post.id).style.display = 'block';
             clicked = 1;
         });
         
-        listItem.appendChild(link);
-        oowblogList.appendChild(listItem);
+        listItemOOW.appendChild(linkOOW);
+        oowblogList.appendChild(listItemOOW);
     });
     
     if (clicked === 0) {
@@ -132,21 +132,21 @@ document.addEventListener("DOMContentLoaded", function () {
     orpheusblogPosts.forEach(post => post.style.display = 'none');
 
     orpheusblogPosts.forEach(post => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
+        const listItemOR = document.createElement('li');
+        const linkOR = document.createElement('a');
         
-        link.href = `#${post.id}`;
-        link.textContent = post.id;
+        linkOR.href = `#${post.id}`;
+        linkOR.textContent = post.id;
         
-        link.addEventListener('click', function (e) {
+        linkOR.addEventListener('click', function (e) {
             e.preventDefault();
             orpheusblogPosts.forEach(p => p.style.display = 'none');
             document.getElementById(post.id).style.display = 'block';
             clicked = 1;
         });
         
-        listItem.appendChild(link);
-        orpheusblogList.appendChild(listItem);
+        listItemOR.appendChild(linkOR);
+        orpheusblogList.appendChild(listItemOR);
     });
     
     if (clicked === 0) {
