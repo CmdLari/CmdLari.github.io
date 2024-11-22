@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         Photography: document.getElementById("Photography"),
         DevLog: document.getElementById("DevLog"),
         BanishingYou: document.getElementById("BanishingYou"),
+        OrpheusRevenge: document.getElementById("OrpheusRevenge"),
         Impressum: document.getElementById("Impressum"),
         Design: document.getElementById("Design"),
         Illustration: document.getElementById("Illustration")
