@@ -207,6 +207,10 @@ hr {
     text-align: center;
   }
 
+  .boxinner1 {
+    padding: 10px;
+  }
+
   .boxinner1 img,
   .boxinner2 img {
     width: 100%;
