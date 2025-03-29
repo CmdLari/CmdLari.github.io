@@ -64,6 +64,7 @@ h3 {
   width: 62%;
   margin: auto;
   padding-top: 20px;
+  padding-bottom: 10px;
   position: sticky;
   top: 0%;
   z-index: 100;
