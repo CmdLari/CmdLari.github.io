@@ -218,8 +218,20 @@ hr {
     flex-wrap: wrap;
   }
 
+  .headerbox_socials a{
+    font-size: 0px;
+    padding: 0%;
+  }
+
   .headerboxinner1, .headerboxinner2 {
     width: 100%;
+  }
+  
+  .headerboxinner1 img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .headerboxinner2 {
