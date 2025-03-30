@@ -262,6 +262,44 @@ iframe {
   border: none;
 }
 
+.boximprint {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #f9f9f9;
+}
+
+/* ------------ MAIN BOX LAYOUT ------------ */
+
+.footerbox {
+  position: sticky;
+  bottom: 0%;
+  z-index: 100;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff5d2;
+  align-items: center;
+  width: 61%;
+  margin: auto;
+  line-height: 0.2;
+  padding: 20px;
+
+}
+
+.footerbox a{
+  font-family: 'Copy bold', sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: #ff828c;
+}
+
+.footerbox a:hover {
+  color: #001e46;
+}
+
 /***************************************************************************************************/
 /* RESPONSIVENESS */
 /***************************************************************************************************/
@@ -271,6 +309,10 @@ iframe {
   .box, .headerbox_socials {
     width: 100%;
     padding-top: 10px;
+  }
+
+  .footerbox {
+    position: unset;
   }
 
   .headerbox {
