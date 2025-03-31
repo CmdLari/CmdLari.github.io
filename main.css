@@ -72,7 +72,7 @@ h3 {
   align-items: center;
   width: 61%;
   margin: auto;
-  line-height: 0.2;             /* Reduce line height */
+  line-height: 0.4;
 
 }
 
@@ -142,34 +142,7 @@ h3 {
   padding: 5px;
 }
 
-.headerbox_submenu {
-  width: 60%;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  position: relative;
-  top: 0%;
-  z-index: 50;
-  background-color: #fff5d2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.headerbox_submenu a {
-  font-family: 'Copy bold', sans-serif;
-  padding: 5px;
-  padding-left: 10px;
-  font-size: large;
-  text-decoration: none;
-  color: #ff828c;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.headerbox_submenu a:hover {
+.headerbox_socials a:hover {
   color: #001e46;
 }
 
@@ -271,12 +244,15 @@ iframe {
   background-color: #f9f9f9;
 }
 
+/* ------------ IMAGE BOX LAYOUT ------------ */
+
+
 /* ------------ MAIN BOX LAYOUT ------------ */
 
 .footerbox {
   position: sticky;
   bottom: 0%;
-  z-index: 100;
+  z-index: 80;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -286,7 +262,7 @@ iframe {
   margin: auto;
   line-height: 0.2;
   padding: 20px;
-
+  gap: 60%;
 }
 
 .footerbox a{
@@ -298,6 +274,12 @@ iframe {
 
 .footerbox a:hover {
   color: #001e46;
+}
+
+.footerbox img {
+  height: 30px;
+  width: auto;
+  margin-right: 20px;
 }
 
 /***************************************************************************************************/
@@ -321,6 +303,7 @@ iframe {
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   .headerbox_socials {
@@ -332,12 +315,6 @@ iframe {
     font-size: 0px;
     padding: 0%;
   }
-
-  .headerbox_submenu {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
 
   .headerboxinner1, .headerboxinner2 {
     width: 100%;
@@ -357,12 +334,6 @@ iframe {
     justify-content: center;
     gap: 10px;
     z-index: 100;
-  }
-
-  .headerbox_submenu a{
-    line-height: 0.8;
-    font-size: small;
-    font-family: 'Copy bold', sans-serif;
   }
 
   .headerbox a {
@@ -400,5 +371,14 @@ iframe {
   iframe {
     width: 280px;
     height: 157px;
+  }
+ 
+  .img-wrapper img:hover {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    transform: none;
   }
 }
