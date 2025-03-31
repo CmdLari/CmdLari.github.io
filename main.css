@@ -346,6 +346,10 @@ iframe {
     position: unset;
   }
 
+  h3 {
+    text-align: center;
+  }
+
   .headerbox {
     position: unset;
     flex-direction: column;
