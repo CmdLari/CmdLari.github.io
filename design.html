@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/ui-images/LapysGames_ImageLogo_small.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Larissa Pychlau | Lapys Studio</title>
+</head>
+    <body>
+        <div class="headerbox">
+            <div class="headerboxinner1">
+                <img src="assets/ui-images/LapysGames_Logo_Long_All_Animated_Website.gif" alt="Logo" style="padding: 10px;"> 
+            </div>
+            <div class="headerboxinner2">
+                <a href="./index.html">ABOUT</a>
+                <a href="./games_banishingYou.html">GAMES</a>
+                <a href="./design.html">DESIGN</a>
+                <a href="./illustration.html">ILLUSTRATION</a>
+                <a href="./photography.html">PHOTOGRAPHY</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="boxblock">
+                <h1>Design</h1>
+                <br>
+                <div id="designfull" class="hide"><img></div>
+                <div class="gallery">
+                        <p>
+                            <img class="Designgallery-img" src="assets/design/Design01.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design02.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design03.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design04.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design05.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design06.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design07.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design08.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design09.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design10.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design11.jpg" alt="Design">
+                            <img class="Designgallery-img" src="assets/design/Design12.jpg" alt="Design">                                    
+                        </p>
+                </div>
+                <script>
+                    document.querySelectorAll('.Designgallery-img')
+                    .forEach($img => $img.onclick = () => {
+                        if (window.innerWidth > 768) {
+                            const $full = document.querySelector('#designfull')
+                            $full.classList.remove('hide')
+                            $full.querySelector('img').src = $img.src
+                            $full.onclick = () => $full.classList.add('hide')
+                        }
+                    })
+                </script>
+                <p style="text-align: center; color: #001e46; font-size: small;">
+                    <b style="color: #d2aa2e;">PRICES: </b> 75€ / hour || 500€ / day || 1800€ / Week 
+                    <br>
+                    <b style="color: #d2aa2e;">PACKAGES: </b>LOGO: from 800€ || BUSINESS CARDS: from 400€ || FLYER: from 300€ || EDITORIAL: from 300€ / Page | 1000€ / 10 Pages
+                    <br>
+                    <b style="color: #d2aa2e;">REFERENCES: </b> dm || you GmbH || GEERS || Fuchs trifft Hund || Jung Fruchtsäfte || Zsuzsannas || Superfood Sauces || Bartsch || Enno Lenze || Wefugees || Dr. Simin Amelsberg || MEDI>>RUN || Hanayu
+                    <br>
+                    <b style="color: #d2aa2e;">CONTACT:</b> larissapychlau@gmail.com || +49 176 80 76 76 78
+                </p>
+                <p style="text-align: center; font-size: small;">In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</p>
+                <br>
+            </div>
+        </div>
+        <div class="footerbox">
+            <img src="assets/ui-images/footerimg.png" alt="footer icon">
+            <a href="./imprint.html">IMPRINT</a>
+        </div>
+    </body>
+</html>
