@@ -1,0 +1,329 @@
+/********************************************************************************
+  THEME
+*********************************************************************************/
+:root {
+  --charcoal: #140b0e;
+  --gold: #a38743;
+  --smoke: #b1bfcf;
+  --darksmoke: #627081;
+  --crimson: #37070a;
+}
+
+/********************************************************************************
+  FONTS
+*********************************************************************************/
+@font-face {
+  font-family: "Header";
+  src: url("sylvester_assets/fonts/MonsieurLaDoulaise-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Copy";
+  src: url("sylvester_assets/fonts/SourceSerif4_36pt-Regular.ttf");
+  font-display: swap;
+}
+
+/********************************************************************************
+  GLOBAL BASE
+*********************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--crimson);
+  /* background-image: url("sylvester_assets/ui/background.jpg"); */
+  background-position: center top;
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  font-family: "Copy", sans-serif;
+  font-size: large;
+}
+
+/********************************************************************************
+  TYPOGRAPHY
+*********************************************************************************/
+h1 {
+  margin: 0.5em 0 0.25em;
+  text-align: center;
+
+  font-family: "Header", sans-serif;
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: 1;
+
+  color: var(--smoke);
+  text-shadow: 0 0 10px var(--smoke);
+
+  transition: text-shadow 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h1:hover {
+  text-shadow: 0 0 30px var(--smoke);
+}
+
+h2 {
+  margin: 20px 0 1em;
+  text-align: center;
+
+  font-family: "Copy", sans-serif;
+  font-size: xx-large;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-transform: uppercase;
+
+  color: var(--gold);
+  text-shadow: 0 0 3px var(--gold);
+
+  transition: text-shadow 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+h2:hover {
+    text-shadow: 0 0 30px var(--gold);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.evening-guidelines {
+  margin: 3rem 0;
+}
+
+.guidelines-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto 0;
+  max-width: 520px;
+}
+
+.guidelines-list li {
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: var(--smoke);
+}
+
+.guidelines-list strong {
+  color: var(--gold);
+  font-weight: normal;
+}
+
+
+/********************************************************************************
+  LAYOUT
+*********************************************************************************/
+.outer-box {
+  width: 40%;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  background-color: var(--charcoal);
+  box-shadow: 0 0 20px var(--crimson);
+
+  transition: box-shadow 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.outer-box:hover {
+  box-shadow: 0 0 40px var(--crimson);
+}
+
+.main-box {
+  width: 100%;
+  padding: 2% 8% 8%;
+
+  position: relative;
+  z-index: 1;
+
+  background-color: var(--charcoal);
+  color: var(--smoke);
+
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.main-box p {
+  margin-bottom: 1.5em;
+}
+
+/********************************************************************************
+  HEADER BANNER
+*********************************************************************************/
+.header-banner {
+  width: 100%;
+}
+
+.header-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/********************************************************************************
+  DIVIDERS
+*********************************************************************************/
+hr {
+  margin: 20px 0;
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+
+.dot-hr {
+  width: 8px;
+  height: 8px;
+  margin: 20px auto;
+
+  border: none;
+  border-radius: 4px;
+  background-color: var(--gold);
+}
+
+/********************************************************************************
+  BUTTONS
+*********************************************************************************/
+.button-wrapper {
+  text-align: center;
+}
+
+.button1 {
+  display: inline-block;
+  width: auto;
+  padding: 0.75rem 2rem;
+
+  border: 2px solid var(--charcoal);
+  border-radius: 2px;
+
+  background-color: var(--charcoal);
+  color: var(--smoke);
+
+  font-family: "Copy", sans-serif;
+  font-size: large;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  box-shadow: 0 0 10px var(--charcoal);
+  transition: box-shadow 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button1:hover {
+  box-shadow: 0 0 30px var(--charcoal);
+}
+
+/********************************************************************************
+  OVERLAYS / EFFECTS
+*********************************************************************************/
+.page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: auto;
+
+  z-index: 9999;
+  pointer-events: none;
+  display: block;
+}
+
+#stars-canvas {
+  position: fixed;
+  inset: 0;
+
+  z-index: 999;
+  pointer-events: none;
+}
+
+/********************************************************************************
+  GALLERY
+*********************************************************************************/
+.random-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 8px;
+}
+
+.random-gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 4px;
+
+  transition: opacity 0.5s ease;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1/4 of main-box width each */
+  gap: 0; /* seamless */
+  margin: 20px 0;
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* makes each tile square */
+  object-fit: cover;   /* crops to square */
+  outline: 1px solid rgba(184, 145, 78, 0.3);
+  outline-offset: -1px;
+}
+
+@media (max-width: 1000px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .random-gallery img {
+    transition: none;
+  }
+}
+
+/********************************************************************************
+  RESPONSIVENESS
+*********************************************************************************/
+@media (max-width: 1000px) {
+  .outer-box {
+    width: 100%;
+  }
+
+  .main-box {
+    padding: 10%;
+    box-shadow:
+      inset 20px 0 20px -20px var(--charcoal),
+      inset -20px 0 20px -20px var(--charcoal),
+      inset 0 -20px 20px -20px var(--charcoal);
+  }
+
+  .page-overlay {
+    display: none;
+  }
+
+  .random-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-size: large;
+  }
+}
