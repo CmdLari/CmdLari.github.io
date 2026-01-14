@@ -89,6 +89,12 @@ h2 {
   text-shadow: 0 0 3px var(--brightred);
 }
 
+h3 {
+  color: var(--darkred);
+  text-shadow: 0 0 3px var(--brightred);
+  text-transform: uppercase;
+}
+
 /********************************************************************************
   LAYOUT
 *********************************************************************************/
@@ -125,6 +131,23 @@ h2 {
   letter-spacing: 0.02em;
 
   text-align: center;
+}
+
+.pill-box {
+  margin: auto;
+  padding: 1%;
+
+  background-color: var(--darkred);
+  color: var(--icyblue);
+
+  position: relative;
+  z-index: 10;
+
+  line-height: 1.7; /* small readability boost */
+  letter-spacing: 0.02em;
+
+  text-align: center;
+  box-shadow: 0 0 10px var(--darkred);
 }
 
 /********************************************************************************
