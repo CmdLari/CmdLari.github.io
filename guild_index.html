@@ -29,9 +29,14 @@
       >
 
       <h2>A quiet refuge for wandering blades</h2>
+
         <div class="pill-box">
             <p class="meta">
-            <strong>LostFromLight</strong> - <strong>Guild ID:</strong> 10233253<br>
+            <strong>LostFromLight</strong>
+            <div class="guild-id-box" onclick="copyGuildID()">
+                <span id="guild-id">10233253</span>
+                <div class="copy-hint">Tap to copy</div>
+            </div>
             [GLOBAL] [ENGLISH] [18+]<br>
             No mandatory schedules • Calm & friendly • Play at your own pace
             </p>
@@ -68,5 +73,17 @@
   </div>
 
   <script src="./guild_wind.js" defer></script>
+  <script>
+    function copyGuildID() {
+    const id = document.getElementById("guild-id").innerText;
+
+    navigator.clipboard.writeText(id).then(() => {
+        const hint = document.querySelector(".copy-hint");
+        hint.innerText = "Copied to clipboard ✓";
+        setTimeout(() => hint.innerText = "Tap to copy", 1600);
+    });
+    }
+</script>
+
 </body>
 </html>
