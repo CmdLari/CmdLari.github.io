@@ -147,7 +147,8 @@ h3 {
   letter-spacing: 0.02em;
 
   text-align: center;
-  box-shadow: 0 0 10px var(--darkred);
+  box-shadow: inset 0 0 20px rgba(255,255,255,0.08),
+  0 0 15px rgba(130,10,24,0.6)
 }
 
 /********************************************************************************
@@ -289,6 +290,7 @@ hr {
   overflow: hidden;
   border-radius: 0 0 8px 8px;
 }
+
 
 /********************************************************************************
   RESPONSIVENESS
