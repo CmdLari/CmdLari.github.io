@@ -1,124 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/ui-images/LapysGames_ImageLogo_small.ico">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Larissa Pychlau | Lapys Studio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/ui/favicon.ico">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Larissa Pychlau | Lapys Studio</title>
+
+  <script src="stars.js" defer></script>
+  <script src="gamesmenu.js" defer></script>
+  <script src="gallerymenu.js" defer></script>   
 </head>
-    <body>
-        <div class="headerbox">
-            <div class="headerboxinner1">
-                <img src="assets/ui-images/LapysGames_Logo_Long_All_Animated_Website.gif" alt="Logo" style="padding: 10px;"> 
-            </div>
-            <div class="headerboxinner2">
-                <a href="./index.html">ABOUT</a>
-                <a href="./games_outOfWater.html">GAMES</a>
-                <a href="./design.html">DESIGN</a>
-                <a href="./illustration.html">ILLUSTRATION</a>
-                <a href="./photography.html">PHOTOGRAPHY</a>
-            </div>
+
+<body>
+    <!-- header -->
+    <div class="headerbox">
+        <div class="headerboxinner1">
+            <img src="assets/ui/headerheader.png" alt="Logo" style="padding: 10px;">
         </div>
+
+        <div class="headerboxinner2">
+            <a href="./index.html"><img src="assets/ui/menu_about.png" alt="About"></a>
+
+            <button class="games-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_games.png" alt="Games menu">
+            </button>
+
+            <button class="gallery-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_gallery.png" alt="Gallery menu">
+            </button>
+        </div>
+    </div>
+
+    <!-- games dropdown -->
+    <div class="games-box" id="gamesBox">
+        <a href="./games_banishingYou.html"><img src="assets/ui/by_icon.png" alt="">Banishing You</a>
+        <a href="./games_crowsCuratedCloset.html">Crows Curated Closet</a>
+        <a href="./games_orpheusRevenge.html"><img src="assets/ui/or_icon.png" alt="">Orpheus' Revenge</a>        
+        <a href="./games_outOfWater.html"><img src="assets/ui/oow_icon.png" alt="">Out of Water</a>
+        <a href="./games_tenfoldTales.html"><img src="assets/ui/tt_icon.png" alt="">Tenfold Tales</a>
+    </div>
+
+    <!-- gallery dropdown -->
+    <div class="gallery-box" id="galleryBox">
+        <a href="./gallery_design.html">DESIGN</a>
+        <a href="./gallery_illustration.html">ILLUSTRATION</a>
+        <a href="./gallery_photography.html">PHOTOGRAHY</a>
+    </div>
+
+    <!-- overlay -->
+    <div class="page-overlay"></div>
+
+    <!-- background effect -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- main centered page -->
+    <div class="outer-box">
+        <div class="header-banner">
+            <img src="assets/ui/header.png" alt="Lapys banner">
+        </div>
+
         <div class="headerbox_socials">
-            <a href="./games_outOfWater.html"><img src="assets/ui-images/oow_icon.png"> OUT OF WATER</a>
-            <a href="./games_banishingYou.html"><img src="assets/ui-images/by_icon.png"> BANISHING YOU</a>
-            <a href="./games_orpheusRevenge.html"><img src="assets/ui-images/or_icon.png"> ORPHEUS' REVENGE</a>
-            <a href="./games_tenfoldTales.html"><img src="assets/ui-images/tt_icon.png"> TENFOLD TALES</a>
+            <a href="https://store.steampowered.com/developer/lapysG" target="_blank" rel="noopener noreferrer"><img src="assets/ui/steam.png" alt=""></a>
+            <a href="https://discord.gg/BSJBeqf3qd" target="_blank" rel="noopener noreferrer"><img src="assets/ui/discord.png" alt=""></a>
+            <a href="https://x.com/LapysGames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/twitter.png" alt=""></a>
+            <a href="https://www.tiktok.com/@lapysgames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/tiktok.png" alt=""></a>
         </div>
-        <div class="box">
-            <div class="boxinner1">
+
+        <!--  -->
+        <!--  -->
+        <!-- PAGE CONTENT HERE -->
+        <!--  -->
+        <!--  -->
+        
+        <div class="main-box">
+            <div class="text-content">
                 <h1>Out of Water</h1>
-                <h2>when autumn days begin to darken.</h2>
-                <hr>
+                <br>
                 <p>
-                    <h3>Out of Water is a mythic visual novel about love, survival, and choice - set in Watarholt, a northern Germanic village in the year 1 CE.</h3>
-                    The harvest is done. The lake runs still. But something in Watarholt is wrong.
+                    <b1>when autumn days begin to darken.</b1> 
                     <br>
-                    <br>                    
-                    Watarholt is a quiet settlement of twelve longhouses, nestled among heaths, rivers, and birch forests. As summer fades  you - like everyone in Watarholt - prepare for shorter days and colder nights: bringing in the harvest, gathering around fires, telling stories, and singing songs.
-                    But the nights grow colder still when villagers begin to vanish... or wash up dead. The woods turn hostile. The waters, deadly.
-                    As tension rises, you’ll form bonds, face ancient horrors, and uncover something wicked beneath the surface.
+                    <b2>Out of Water is a mythic visual novel about love, survival, and choice - set in Watarholt, a northern Germanic village in the year 1 CE.</b2>
                     <br>
-                    <br>
-                    <h3>GIVE THE DEMO A TRY</h3>
-                    <br>
-                    <iframe src="https://store.steampowered.com/widget/3911100/" frameborder="0" width="646" height="190"></iframe>
                 </p>
             </div>
-            <div class="boxinner2">
-                <img src="assets/images_games/outOfWater_titleCard.png" alt="Game Art">
+            <div class="iframe-wrapper">
+                <iframe src="https://store.steampowered.com/widget/3907840/" frameborder="0"></iframe>
             </div>
-        </div>
-        <div class="box">
-            <div class="boxinner1">
-                <h3>THIS GAME IS STILL UNDER DEVELOPMENT! CURRENT RELEASE DATE: Q2 2026</h3>
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0fWplGvDl4M?si=1So20VVDQN2XBeGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="illufull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot1.png" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot3.png" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot4.png" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot5.png" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot6.png" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/outofwater_screenshot7.png" alt="Screenshot">
+                    </p>
+            </div>
+            <script>
+                document.querySelectorAll('.Illustrationgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#illufull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+            <br>
+            <br>
+            <div class="text-content">
+                <p>
+                    The harvest is done. The lake runs still. But something in Watarholt is wrong. Watarholt is a quiet settlement of twelve longhouses, nestled among heaths, rivers, and birch forests. As summer fades you - like everyone in Watarholt - prepare for shorter days and colder nights: bringing in the harvest, gathering around fires, telling stories, and singing songs. But the nights grow colder still when villagers begin to vanish... or wash up dead. The woods turn hostile. The waters, deadly. As tension rises, you’ll form bonds, face ancient horrors, and uncover something wicked beneath the surface.
+                </p>
+                <p>
+                    <b1>Quotes</b1>
                     <br>
-                    <iframe src="https://store.steampowered.com/widget/3907840/" frameborder="0" width="100%" height="190"></iframe>
                     <br>
-                    <a href="https://www.dropbox.com/scl/fo/tk8rkkhq6734erywgbx92/ABL4mhFFBk0xnu4AEM9i1t0?rlkey=yt3kquyfsomvotozvajncbk3t&st=jeu27nz8&dl=0" target="_blank">>> PRESS KIT</a>
+                    “[...] the game, it's stunning. The backgrounds are truly immersive, while at the same time the art style for both BGs and sprites is consistent and -- most importantly -- totally appropriate for the mood. There's almost a cinematic quality to this heightened and very focused atmophere.”
+                    <br>
+                    <b2>via Steam, 2025 - AUG - 18th</b2>
+                    <br>
+                    <br>
+                    “Love the hand-drawn look, the soundtrack fits perfectly!”
+                    <br>
+                    <b2>via Steam, 2025 - AUG - 19th</b2>
+                    <br>
+                    <br>
+                    <a href="https://www.dropbox.com/scl/fo/tk8rkkhq6734erywgbx92/ABL4mhFFBk0xnu4AEM9i1t0?rlkey=yt3kquyfsomvotozvajncbk3t&st=jeu27nz8&dl=0" target="_blank" class="button">PRESS KIT</a>
+                </p>
             </div>
-            <div class="boxinner2">
-                <iframe src="https://www.youtube.com/embed/0fWplGvDl4M" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
-            </div>
-        </div>
-        <div class="box">
-            <div class="boxinner1">
-                <div class="innerflex">
-                    <div class="boxinner1inner">
-                        <h3>Features</h3>
-                        <b3>Branching choice-driven narrative</b3> with <b3>different endings</b3>
-                        <br>
-                        Rich, <b3>hand-drawn</b3> character illustrations, backgrounds and UI
-                        <br>
-                        Haunting, dreamlike tone wrapped in <b3>soft horror</b3>
-                        <br>
-                        <b3>Personalisation</b3> via name and a non-descript, non-gendered player character
-                        <br>
-                        3 potential, non-mandatory <b3>romances</b3>
-                    </div>            
-                    <div class="boxinner1inner">
-                        <h3>My work for Banishing You:</h3>
-                        <b3>Developer · Artist · Writer</b3>
-                        <br>
-                        <b3>Developed</b3> using Ren’Py and python                   
-                        <br>
-                        <b3>Art</b3> including everything from character design, illustration, UI elements to minor assets
-                        <br>
-                        <b3>Written</b3> the dialogue, prose and choices
-                    </div>            
-                </div>
-            </div>
-            <div class="boxinner2">
-                <img src="assets/images_games/outOfWater_titleCard2.png" alt="Game Art">
-            </div>
-        </div>
-        <div class="box">
-            <div class="boxinner1">
-                <h3>Review Quotes</h3>
-                <div class="innerflex">
-                    <div class="boxinner1inner">
-                        “[]...] the game, it's stunning. The backgrounds are truly immersive, while at the same time the art style for both BGs and sprites is consistent and -- most importantly -- totally appropriate for the mood. There's almost a cinematic quality to this heightened and very focused atmophere.”
-                        <br>
-                        <b4>via Steam, 2025 - AUG - 18th</b4>
-                        <br>
-                    </div>            
-                    <div class="boxinner1inner">
-                        “Love the hand-drawn look, the soundtrack fits perfectly!”
-                        <br>
-                        <b4>via Steam, 2025 - AUG - 19th</b4>
-                        <br>
-                    </div>            
-                </div>
-            </div>
-            <div class="boxinner2">
-                <img src="assets/images_games/outOfWater_titleCard3.png" alt="Game Art">
-            </div>
-        </div>
-        <div class="footerbox">
-            <img src="assets/ui-images/footerimg.png" alt="footer icon">
-            <a href="./imprint.html">IMPRINT</a>
-        </div>
-    </body>
+    <!-- footer -->
+    <div class="footerbox">
+        <img src="assets/ui/footerimg.png" alt="footer icon">
+        <a href="./imprint.html">IMPRINT</a>
+    </div>
+</body>
 </html>

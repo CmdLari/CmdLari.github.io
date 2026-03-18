@@ -1,121 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/ui-images/LapysGames_ImageLogo_small.ico">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Larissa Pychlau | Lapys Studio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/ui/favicon.ico">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Larissa Pychlau | Lapys Studio</title>
+
+  <script src="stars.js" defer></script>
+  <script src="gamesmenu.js" defer></script>
+  <script src="gallerymenu.js" defer></script> </head>
 </head>
-    <body>
-        <div class="headerbox">
-            <div class="headerboxinner1">
-                <img src="assets/ui-images/LapysGames_Logo_Long_All_Animated_Website.gif" alt="Logo" style="padding: 10px;"> 
-            </div>
-            <div class="headerboxinner2">
-                <a href="./index.html">ABOUT</a>
-                <a href="./games_outOfWater.html">GAMES</a>
-                <a href="./design.html">DESIGN</a>
-                <a href="./illustration.html">ILLUSTRATION</a>
-                <a href="./photography.html">PHOTOGRAPHY</a>
-            </div>
+
+<body>
+    <!-- header -->
+    <div class="headerbox">
+        <div class="headerboxinner1">
+            <img src="assets/ui/headerheader.png" alt="Logo" style="padding: 10px;">
         </div>
+
+        <div class="headerboxinner2">
+            <a href="./index.html"><img src="assets/ui/menu_about.png" alt="About"></a>
+
+            <button class="games-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_games.png" alt="Games menu">
+            </button>
+
+            <button class="gallery-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_gallery.png" alt="Gallery menu">
+            </button>
+        </div>
+    </div>
+
+    <!-- games dropdown -->
+    <div class="games-box" id="gamesBox">
+        <a href="./games_banishingYou.html"><img src="assets/ui/by_icon.png" alt="">Banishing You</a>
+        <a href="./games_crowsCuratedCloset.html">Crows Curated Closet</a>
+        <a href="./games_orpheusRevenge.html"><img src="assets/ui/or_icon.png" alt="">Orpheus' Revenge</a>        
+        <a href="./games_outOfWater.html"><img src="assets/ui/oow_icon.png" alt="">Out of Water</a>
+        <a href="./games_tenfoldTales.html"><img src="assets/ui/tt_icon.png" alt="">Tenfold Tales</a>
+    </div>
+
+    <!-- gallery dropdown -->
+    <div class="gallery-box" id="galleryBox">
+        <a href="./gallery_design.html">DESIGN</a>
+        <a href="./gallery_illustration.html">ILLUSTRATION</a>
+        <a href="./gallery_photography.html">PHOTOGRAHY</a>
+    </div>
+
+    <!-- overlay -->
+    <div class="page-overlay"></div>
+
+    <!-- background effect -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- main centered page -->
+    <div class="outer-box">
+        <div class="header-banner">
+            <img src="assets/ui/header.png" alt="Lapys banner">
+        </div>
+
         <div class="headerbox_socials">
-            <a href="./games_outOfWater.html"><img src="assets/ui-images/oow_icon.png"> OUT OF WATER</a>
-            <a href="./games_banishingYou.html"><img src="assets/ui-images/by_icon.png"> BANISHING YOU</a>
-            <a href="./games_orpheusRevenge.html"><img src="assets/ui-images/or_icon.png"> ORPHEUS' REVENGE</a>
-            <a href="./games_tenfoldTales.html"><img src="assets/ui-images/tt_icon.png"> TENFOLD TALES</a>
+            <a href="https://store.steampowered.com/developer/lapysG" target="_blank" rel="noopener noreferrer"><img src="assets/ui/steam.png" alt=""></a>
+            <a href="https://discord.gg/BSJBeqf3qd" target="_blank" rel="noopener noreferrer"><img src="assets/ui/discord.png" alt=""></a>
+            <a href="https://x.com/LapysGames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/twitter.png" alt=""></a>
+            <a href="https://www.tiktok.com/@lapysgames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/tiktok.png" alt=""></a>
         </div>
-        <div class="box">
-            <div class="boxinner1">
-                <h1>BANISHING YOU</h1>
-                <h2>when your dreams manifest, don’t trust them!</h2>
-                <hr>
-                <p>
-                    <h3>A visual novel filled with strange, alluring characters and a lurking, dark danger.</h3>
-                    You wake up in a mysterious forest with no idea how you got there - just a surreal invitation to a masquerade ball and a bad feeling. Navigating manipulative meetings and potential romance, you’ll find yourself in a realm where fears take form and emotions have teeth.
-                    <br>
-                    <br>                    
-                    Every choice deepens a bond - or drives the world toward its undoing.
-                    <br>
-                    <br>
-                    <iframe src="https://store.steampowered.com/widget/2926910/" frameborder="0" width="100%" height="190"></iframe>
-                    <br>
-                    <a href="https://www.dropbox.com/scl/fo/dcc77zmmj54nyazz95x17/AAlBniMIBrCbNB2e661IEWA?rlkey=8qibwdaqa8k67vyto4q3zdxgl&st=zo3lljva&dl=0" target="_blank">>> PRESS KIT</a>
-                </p>
+
+        <!--  -->
+        <!--  -->
+        <!-- PAGE CONTENT HERE -->
+        <!--  -->
+        <!--  -->
+        
+        <div class="main-box">
+            <div class="text-content">
+                <h1>Banishing You</h1>
                 <br>
+                <p>
+                    <b1>when your dreams manifest, don’t trust them!</b1> 
+                    <br>
+                    <b2>A visual novel filled with strange, alluring characters and a lurking, dark danger.</b2>
+                    <br>
+                </p>
             </div>
-            <div class="boxinner2">
-                <img src="assets/images_games/banishingYou_titleCard.png" alt="Game Art">
+            <div class="iframe-wrapper">
+                <iframe src="https://store.steampowered.com/widget/2926910/" frameborder="0"> </iframe>
             </div>
-        </div>
-        <div class="box">
-            <div class="boxinner1">
-                <div class="innerflex">
-                    <div class="boxinner1inner">
-                        <h3>Features</h3>
-                        <b3>Branching choice-driven narrative</b3> with <b3>12 different endings</b3>
-                        <br>
-                        Rich, <b3>hand-drawn</b3> character illustrations, backgrounds and UI
-                        <br>
-                        Haunting, dreamlike tone wrapped in <b3>soft horror</b3>
-                        <br>
-                        <b3>Personalisation</b3> via name and a non-descript, non-gendered player character
-                        <br>
-                        5 potential, non-mandatory <b3>romances</b3>
-                    </div>            
-                    <div class="boxinner1inner">
-                        <h3>My work for Banishing You:</h3>
-                        <b3>Developer · Artist · Writer</b3>
-                        <br>
-                        <b3>Developed</b3> using Ren’Py and python                   
-                        <br>
-                        <b3>Art</b3> including everything from character design, illustration, UI elements to minor assets
-                        <br>
-                        <b3>Written</b3> over 80,000 lines of dialogue, prose and choices
-                    </div>            
-                </div>
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IH2odr8Cch8?si=UkqY4254cIZ9Wqos" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="boxinner2">
-                <iframe src="https://www.youtube.com/embed/IH2odr8Cch8" frameborder="0" allowfullscreen style="display: block; margin: auto;"></iframe>
+            <div id="illufull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_1.jpg" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_2.jpg" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_3.jpg" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_4.jpg" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_5.jpg" alt="Screenshot">
+                        <img class="Illustrationgallery-img" src="assets/images/games/BanishingYou_Screenshot_6.jpg" alt="Screenshot">
+                    </p>
             </div>
-        </div>
-        <div class="box">
-            <div class="boxinner1">
-                <h3>Review Quotes</h3>
-                <div class="innerflex">
-                    <div class="boxinner1inner">
-                        “Beautiful, <b2>Mesmerizing Art</b2> and Gorgeous Characters [...] I’m in tears, what a beautiful and brief journey in one playthrough”
-                        <br>
-                        <b4>via Steam, 2024 - AUG - 18th</b4>
-                        <br>
-                        <br>
-                        “This was certainly an interesting read. In a <b2>uniquely strange</b2> way.”
-                        <br>
-                        <b4>via Steam, 2024 - AUG - 17th</b4>
-                        <br>
-                    </div>            
-                    <div class="boxinner1inner">
-                        “Wow, what a gem of a visual novel! [...] what I got instead is a surprisingly <b2>deep and unpredictable story set in a truly enchanting world</b2> filled with equally enchanting inhabitants.”
-                        <br>
-                        <b4>via Steam, 2024 - NOV - 08th</b4>
-                        <br>
-                        <br>
-                        “A <b2>truly magical, almost ethereal</b2> visual novel about finding your own strength along with some romance [...].”
-                        <br>
-                        <b4>via Steam, 2025 - MAY - 29th</b4>
-                        <br>
-                    </div>            
-                </div>
+            <script>
+                document.querySelectorAll('.Illustrationgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#illufull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+            <br>
+            <br>
+            <div class="text-content">
+                <p>
+                    You wake up in a mysterious forest with no idea how you got there - just a surreal invitation to a masquerade ball and a bad feeling. Navigating manipulative meetings and potential romance, you’ll find yourself in a realm where fears take form and emotions have teeth. Every choice deepens a bond - or drives the world toward its undoing.
+                </p>
+                <p>
+                    <b1>Quotes</b1>
+                    <br>
+                    <br>
+                    “Beautiful, Mesmerizing Art and Gorgeous Characters [...] I’m in tears, what a beautiful and brief journey in one playthrough”
+                    <br>
+                    <b2>via Steam, 2024 - AUG - 18th</b2>
+                    <br>
+                    <br>
+                    “This was certainly an interesting read. In a uniquely strange way.”
+                    <br>
+                    <b2>via Steam, 2024 - AUG - 17th</b2>
+                    <br>
+                    <br>
+                    “Wow, what a gem of a visual novel! [...] what I got instead is a surprisingly deep and unpredictable story set in a truly enchanting world filled with equally enchanting inhabitants.”
+                    <br>
+                    <b2>via Steam, 2024 - NOV - 08th</b2>
+                    <br>
+                    <br>
+                    “A truly magical, almost ethereal visual novel about finding your own strength along with some romance [...].”
+                    <br>
+                    <b2>via Steam, 2025 - MAY - 29th</b2>
+                    <br>
+                    <br>
+                    <a href="https://www.dropbox.com/scl/fo/dcc77zmmj54nyazz95x17/AAlBniMIBrCbNB2e661IEWA?rlkey=8qibwdaqa8k67vyto4q3zdxgl&st=zo3lljva&dl=0" target="_blank" class="button">PRESS KIT</a>
+                </p>
             </div>
-            <div class="boxinner2">
-                <img src="assets/images_games/banishingYou_titleCard2.png" alt="Game Art">
-            </div>
-        </div>
-        <div class="footerbox">
-            <img src="assets/ui-images/footerimg.png" alt="footer icon">
-            <a href="./imprint.html">IMPRINT</a>
-        </div>
-    </body>
+    <!-- footer -->
+    <div class="footerbox">
+        <img src="assets/ui/footerimg.png" alt="footer icon">
+        <a href="./imprint.html">IMPRINT</a>
+    </div>
+</body>
 </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/ui/favicon.ico">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Larissa Pychlau | Lapys Studio</title>
+
+  <script src="stars.js" defer></script>
+  <script src="gamesmenu.js" defer></script>
+  <script src="gallerymenu.js" defer></script> </head>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="headerbox">
+        <div class="headerboxinner1">
+            <img src="assets/ui/headerheader.png" alt="Logo" style="padding: 10px;">
+        </div>
+
+        <div class="headerboxinner2">
+            <a href="./index.html"><img src="assets/ui/menu_about.png" alt="About"></a>
+
+            <button class="games-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_games.png" alt="Games menu">
+            </button>
+
+            <button class="gallery-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_gallery.png" alt="Gallery menu">
+            </button>
+        </div>
+    </div>
+
+    <!-- games dropdown -->
+    <div class="games-box" id="gamesBox">
+        <a href="./games_banishingYou.html"><img src="assets/ui/by_icon.png" alt="">Banishing You</a>
+        <a href="./games_crowsCuratedCloset.html">Crows Curated Closet</a>
+        <a href="./games_orpheusRevenge.html"><img src="assets/ui/or_icon.png" alt="">Orpheus' Revenge</a>        
+        <a href="./games_outOfWater.html"><img src="assets/ui/oow_icon.png" alt="">Out of Water</a>
+        <a href="./games_tenfoldTales.html"><img src="assets/ui/tt_icon.png" alt="">Tenfold Tales</a>
+    </div>
+
+    <!-- gallery dropdown -->
+    <div class="gallery-box" id="galleryBox">
+        <a href="./gallery_design.html">DESIGN</a>
+        <a href="./gallery_illustration.html">ILLUSTRATION</a>
+        <a href="./gallery_photography.html">PHOTOGRAHY</a>
+    </div>
+
+    <!-- overlay -->
+    <div class="page-overlay"></div>
+
+    <!-- background effect -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- main centered page -->
+    <div class="outer-box">
+        <div class="header-banner">
+            <img src="assets/ui/header.png" alt="Lapys banner">
+        </div>
+
+        <div class="headerbox_socials">
+            <a href="https://store.steampowered.com/developer/lapysG" target="_blank" rel="noopener noreferrer"><img src="assets/ui/steam.png" alt=""></a>
+            <a href="https://discord.gg/BSJBeqf3qd" target="_blank" rel="noopener noreferrer"><img src="assets/ui/discord.png" alt=""></a>
+            <a href="https://x.com/LapysGames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/twitter.png" alt=""></a>
+            <a href="https://www.tiktok.com/@lapysgames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/tiktok.png" alt=""></a>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- PAGE CONTENT HERE -->
+        <!--  -->
+        <!--  -->
+        <br>
+        <br>        
+        <div class="main-box">
+            <h1>BAND PHOTOGRAHY</h1>
+            <div id="illufull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band01.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band02.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band03.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band04.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band05.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band06.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band07.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band08.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band09.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band10.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band11.jpg" alt="Band Photography">
+                        <img class="Illustrationgallery-img" src="assets/images/photography/Band12.jpg" alt="Band Photography">
+                    </p>
+            </div>
+            <script>
+                document.querySelectorAll('.Illustrationgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#illufull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+            <div class="text-content">
+                <p style="text-align: center; font-size: small;">
+                    <b1>PRICES: </b1>
+                    <br>
+                    1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
+                    <br>
+                    <br>
+                    <b1>REFERENCES:</b1>
+                    <br>
+                    Bad Blood Exhaust || Schwech und Pefel || Asuka || Words of Farewell || Heartbound || CCO || Melody of my Heartbeat
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <h1>PORTRAIT PHOTOGRAHY</h1>
+            <div id="portraitfull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait01.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait02.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait03.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait04.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait05.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait06.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait07.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait08.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait09.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait10.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait11.jpg" alt="Portrait Photography">
+                        <img class="portraitgallery-img" src="assets/images/photography/Portrait12.jpg" alt="Portrait Photography">
+                    </p>
+            </div>
+            <script>
+                document.querySelectorAll('.portraitgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#portraitfull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+                <div class="text-content">
+                <p style="text-align: center; font-size: small;">
+                    <b1>PRICES: </b1>
+                    <br>
+                    1 h: 150€ || 2 h: 275€ || 3 h: 400€ || 1 d: 500€
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <h1>BAND PHOTOGRAHY</h1>
+            <div id="businessfull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="Businessgallery-img" src="assets/images/photography/Business01.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business02.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business03.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business04.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business05.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business06.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business07.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business08.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business09.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business10.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business11.jpg" alt="Business Photography">
+                        <img class="Businessgallery-img" src="assets/images/photography/Business12.jpg" alt="Business Photography">
+                    </p>
+            </div>
+            <script>
+                document.querySelectorAll('.Businessgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#businessfull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+            <div class="text-content">
+                <p style="text-align: center; font-size: small;">
+                    <b1>PRICES: </b1>
+                    <br>
+                    1 h: 250€ || 2 h: 375€ || 3 h: 500€ || 1 d: 850€
+                    <br>
+                    <br>
+                    <b1>REFERENCES:</b1>
+                    <br>
+                    Biotulin || Hanayu || dm || you GmbH || Atelier Claus Sander || Heilsarmee Hamburg || DGzRS || Buddels || EXPOnow
+                    <br>
+                    <br>                    
+                    <b1>CONTACT: </b1>
+                    <br>
+                    larissapychlau@gmail.com || +49 176 80 76 76 78
+                    <br>
+                    <br>
+                    <b2>In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</b2>
+                    <br>
+                </p>
+            </div>
+        </div>
+    <!-- footer -->
+    <div class="footerbox">
+        <img src="assets/ui/footerimg.png" alt="footer icon">
+        <a href="./imprint.html">IMPRINT</a>
+    </div>
+</body>
+</html>

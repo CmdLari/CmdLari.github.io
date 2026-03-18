@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Lapys is a solo creative studio crafting emotionally resonant games, design, and illustration with a handmade edge.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./assets/ui/favicon.ico">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Larissa Pychlau | Lapys Studio</title>
+
+  <script src="stars.js" defer></script>
+  <script src="gamesmenu.js" defer></script>
+  <script src="gallerymenu.js" defer></script> </head>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="headerbox">
+        <div class="headerboxinner1">
+            <img src="assets/ui/headerheader.png" alt="Logo" style="padding: 10px;">
+        </div>
+
+        <div class="headerboxinner2">
+            <a href="./index.html"><img src="assets/ui/menu_about.png" alt="About"></a>
+
+            <button class="games-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_games.png" alt="Games menu">
+            </button>
+
+            <button class="gallery-toggle" aria-expanded="false" type="button">
+                <img src="assets/ui/menu_gallery.png" alt="Gallery menu">
+            </button>
+        </div>
+    </div>
+
+    <!-- games dropdown -->
+    <div class="games-box" id="gamesBox">
+        <a href="./games_banishingYou.html"><img src="assets/ui/by_icon.png" alt="">Banishing You</a>
+        <a href="./games_crowsCuratedCloset.html">Crows Curated Closet</a>
+        <a href="./games_orpheusRevenge.html"><img src="assets/ui/or_icon.png" alt="">Orpheus' Revenge</a>        
+        <a href="./games_outOfWater.html"><img src="assets/ui/oow_icon.png" alt="">Out of Water</a>
+        <a href="./games_tenfoldTales.html"><img src="assets/ui/tt_icon.png" alt="">Tenfold Tales</a>
+    </div>
+
+    <!-- gallery dropdown -->
+    <div class="gallery-box" id="galleryBox">
+        <a href="./gallery_design.html">DESIGN</a>
+        <a href="./gallery_illustration.html">ILLUSTRATION</a>
+        <a href="./gallery_photography.html">PHOTOGRAHY</a>
+    </div>
+
+    <!-- overlay -->
+    <div class="page-overlay"></div>
+
+    <!-- background effect -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- main centered page -->
+    <div class="outer-box">
+        <div class="header-banner">
+            <img src="assets/ui/header.png" alt="Lapys banner">
+        </div>
+
+        <div class="headerbox_socials">
+            <a href="https://store.steampowered.com/developer/lapysG" target="_blank" rel="noopener noreferrer"><img src="assets/ui/steam.png" alt=""></a>
+            <a href="https://discord.gg/BSJBeqf3qd" target="_blank" rel="noopener noreferrer"><img src="assets/ui/discord.png" alt=""></a>
+            <a href="https://x.com/LapysGames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/twitter.png" alt=""></a>
+            <a href="https://www.tiktok.com/@lapysgames" target="_blank" rel="noopener noreferrer"><img src="assets/ui/tiktok.png" alt=""></a>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!-- PAGE CONTENT HERE -->
+        <!--  -->
+        <!--  -->
+        <br>
+        <br>
+        
+        <div class="main-box">
+            <div id="illufull" class="hide"><img></div>
+            <div class="gallery">
+                    <p>
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design01.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design02.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design03.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design04.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design05.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design06.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design07.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design08.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design09.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design10.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design11.jpg" alt="Design">
+                        <img class="Illustrationgallery-img" src="assets/images/design/Design12.jpg" alt="Design">
+                    </p>
+            </div>
+            <script>
+                document.querySelectorAll('.Illustrationgallery-img')
+                .forEach($img => $img.onclick = () => {
+                    if (window.innerWidth > 768) {
+                        const $full = document.querySelector('#illufull')
+                        $full.classList.remove('hide')
+                        $full.querySelector('img').src = $img.src
+                        $full.onclick = () => $full.classList.add('hide')
+                    }
+                })
+            </script>
+                <div class="text-content">
+                <p style="text-align: center; font-size: small;">
+                    <b1>PRICES: </b1>
+                    <br>
+                    75€ / hour || 500€ / day || 1800€ / Week
+                    <br>
+                    <br>
+                    <b1>PACKAGES:</b1>
+                    <br>
+                    LOGO: from 800€ || BUSINESS CARDS: from 400€ || FLYER: from 300€ || EDITORIAL: from 300€ / Page | 1000€ / 10 Pages
+                    <br>
+                    <br>
+                    <b1>REFERENCES:</b1>
+                    <br>
+                    dm || you GmbH || GEERS || Fuchs trifft Hund || Jung Fruchtsäfte || Zsuzsannas || Superfood Sauces || Bartsch || Enno Lenze || Wefugees || Dr. Simin Amelsberg || MEDI>>RUN || Hanayu
+                    <br>
+                    <br>
+                    <b1>CONTACT: </b1>
+                    <br>
+                    larissapychlau@gmail.com || +49 176 80 76 76 78
+                    <br>
+                    <br>
+                    <b2>In accordance with Section 19 (1) of the German Turnover Tax Act (UStG), no turnover tax is declared.</b2>
+                    <br>
+                </p>
+            </div>
+        </div>
+    <!-- footer -->
+    <div class="footerbox">
+        <img src="assets/ui/footerimg.png" alt="footer icon">
+        <a href="./imprint.html">IMPRINT</a>
+    </div>
+</body>
+</html>
