@@ -1,0 +1,822 @@
+
+/* =========================================
+   NAVIGATION - BASE
+========================================= */
+
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--navigation-width, 100%);
+  min-width: 0;
+  min-height: 100vh;
+  flex-shrink: 0;
+
+  background: transparent;
+
+  isolation: isolate;
+
+  transition: width 0.6s ease;
+
+  z-index: 10;
+}
+
+.navigation-layout {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  transition:
+    width 0.6s ease,
+    padding 0.6s ease;
+}
+
+
+/* =========================================
+   DECORATIVE OVERLAY
+========================================= */
+
+.navigation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: auto;
+  height: 100vh;
+  max-width: none;
+
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* =========================================
+   BRANDING - BASE
+========================================= */
+
+.navigation-content {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  transition:
+    width 0.6s ease,
+    padding 0.6s ease;
+  
+  margin-top: 0px;
+}
+
+.navigation-logo {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+  width: 25%;
+  height: auto;
+  margin: 0;
+
+  filter:
+    drop-shadow(0 0 5px rgba(238, 40, 89, 0.7))
+    drop-shadow(0 0 15px rgba(238, 40, 89, 0.4))
+    drop-shadow(0 0 30px rgba(238, 40, 89, 0.2));
+
+  transition: width 0.6s ease;
+}
+
+
+/* LOGO ROTATION */
+
+.navigation-logo {
+  animation: logo-spin 0.8s ease-in-out both;
+}
+
+.navigation-compact .navigation-logo {
+  animation: logo-spin-compact 0.8s ease-in-out both;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-spin-compact {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.navigation-brand {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+
+  transition: margin-left 0.6s ease;
+}
+
+.navigation-title {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 700;
+  font-size: clamp(64px, 10vw, 200px);
+  letter-spacing: 5px;
+  line-height: 1;
+
+  color: var(--color-pink);
+
+  text-shadow:
+    /* Dark drop shadow */
+    4px 6px 2px rgba(0, 0, 33, 0.9),
+
+    /* Pink neon glow */
+    0 0 8px rgba(245, 35, 96, 0.7),
+    0 0 20px rgba(245, 35, 96, 0.45),
+    0 0 45px rgba(245, 35, 96, 0.25);
+
+  transition:
+    font-size 0.6s ease,
+    letter-spacing 0.6s ease;
+}
+
+.navigation-tagline {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: clamp(22.4px, 3.5vw, 70px);
+  letter-spacing: 5px;
+  line-height: 1.05;
+
+  color: var(--color-orange);
+  margin-top: 10px;
+
+  text-shadow:
+    /* Dark drop shadow */
+    3px 4px 2px rgba(0, 0, 33, 0.9),
+
+    /* Orange neon glow */
+    0 0 6px rgba(255, 103, 28, 0.7),
+    0 0 18px rgba(255, 103, 28, 0.45),
+    0 0 35px rgba(255, 103, 28, 0.2);
+
+  transition:
+    font-size 0.6s ease,
+    letter-spacing 0.6s ease,
+    margin-top 0.6s ease;
+}
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
+
+.navigation-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: 20%;
+  margin-top: 25px;
+
+  transition:
+    width 0.6s ease,
+    padding 0.6s ease,
+    margin 0.6s ease;
+}
+
+.navigation-social-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.navigation-social-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+
+  transition: transform 0.2s ease;
+}
+
+.navigation-social-link:hover .navigation-social-icon {
+  transform: scale(1.15);
+}
+
+
+/* =========================================
+   MAIN MENU
+========================================= */
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 250px;
+  height: 80px;
+  margin-top: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00E5E8 0%,
+      #00C5D6 55%,
+      #009DBB 100%
+    );
+
+  border: 2px solid rgba(0, 229, 232, 0.8);
+  border-radius: 20px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -5px 12px rgba(0, 0, 33, 0.25),
+    0 0 15px rgba(0, 229, 232, 0.2),
+    0 4px 15px rgba(0, 0, 33, 0.4);
+
+  box-sizing: border-box;
+
+  transition:
+    width 0.6s ease,
+    height 0.6s ease,
+    margin 0.6s ease,
+    transform 0.6s ease,
+    padding 0.6s ease;
+}
+
+.navigation-menu-button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+}
+
+.navigation-menu-icon {
+  display: block;
+  width: auto;
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+
+  transition:
+    height 0.6s ease,
+    transform 0.2s ease;
+}
+
+.navigation-menu-button:hover .navigation-menu-icon {
+  transform: scale(1.15);
+}
+
+/* =========================================
+   TOOLTIPS
+========================================= */
+
+.navigation-tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+
+  transform: translate(-50%, 5px);
+
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  background-color: var(--color-midnight);
+  color: var(--color-cyan);
+
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  z-index: 10;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.navigation-menu-button:hover .navigation-tooltip,
+.navigation-menu-button:focus-visible .navigation-tooltip,
+.navigation-social-link:hover .navigation-tooltip,
+.navigation-social-link:focus-visible .navigation-tooltip,
+.navigation-submenu-button:hover .navigation-tooltip,
+.navigation-submenu-button:focus-visible .navigation-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+
+/* =========================================
+   SUBMENU
+========================================= */
+
+.navigation-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  width: 80%;
+  min-height: 75px;
+  padding: 15px 15px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      160deg,
+      #351367 0%,
+      #211044 100%
+    );
+
+  border: 1px solid rgba(0, 229, 232, 0.45);
+  border-top: none;
+
+  box-shadow:
+    inset 0 0 0 3px rgba(0, 0, 33, 0.5),
+    inset 0 0 18px rgba(73, 12, 145, 0.4),
+    0 6px 20px rgba(0, 0, 33, 0.4),
+    0 0 15px rgba(0, 229, 232, 0.08);
+
+  box-sizing: border-box;
+  border-radius: 0 0 20px 5px;
+
+  transform-origin: top;
+
+  animation: submenu-appear 0.4s ease-out both;
+}
+
+.navigation-submenu-button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.navigation-submenu-icon {
+  display: block;
+  width: auto;
+  height: 40px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.navigation-submenu-button:hover {
+  transform: scale(1.15);
+}
+
+.navigation-submenu-button.active {
+  filter: drop-shadow(0 0 8px var(--color-cyan));
+}
+
+
+/* =========================================
+   SUBMENU ANIMATION
+========================================= */
+
+@keyframes submenu-appear {
+  from {
+    opacity: 0;
+    scale: 1 0.8;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1 1;
+  }
+}
+
+
+/* =========================================
+   FULL-SCREEN MODE
+========================================= */
+
+.navigation:not(.navigation-compact) .navigation-layout {
+  width: 70vw;
+  max-height: 70vh;
+}
+
+
+/* =========================================
+   COMPACT MODE - NAVIGATION
+========================================= */
+
+.navigation-compact {
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  overflow: visible;
+}
+
+.navigation-compact .navigation-layout {
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 5% 0 5% 5%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   COMPACT MODE - BRANDING
+========================================= */
+
+.navigation-compact .navigation-content {
+  width: 45vw;
+  min-width: 45vw;
+  max-width: none;
+
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  overflow: visible;
+}
+
+.navigation-compact .navigation-logo {
+  width: 40%;
+  flex-shrink: 0;
+}
+
+.navigation-compact .navigation-brand {
+  flex-shrink: 0;
+  width: max-content;
+
+  white-space: nowrap;
+  align-items: flex-start;
+
+  margin-left: 2%;
+}
+
+.navigation-compact .navigation-title {
+  font-size: clamp(60px, 8vw, 160px);
+  letter-spacing: 2px;
+}
+
+.navigation-compact .navigation-tagline {
+  font-size: clamp(16px, 2vw, 40px);
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+
+/* =========================================
+   COMPACT MODE - SOCIALS
+========================================= */
+
+.navigation-compact .navigation-socials {
+  width: 80%;
+  justify-content: flex-end;
+
+  padding-right: 6%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   COMPACT MODE - MAIN MENU
+========================================= */
+
+.navigation-compact .navigation-bar {
+  width: 80%;
+  height: 60px;
+
+  margin-top: 30px;
+  margin-left: 0;
+
+  transform: translateX(-5%);
+
+  justify-content: flex-end;
+  gap: 15px;
+
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  border-radius: 0 20px 0 0;
+}
+
+.navigation-compact .navigation-menu-icon {
+  height: 40px;
+}
+
+
+/* =========================================
+   COMPACT MODE - SUBMENU
+========================================= */
+
+.navigation-compact .navigation-submenu {
+  width: 80%;
+  min-width: 0;
+  max-width: none;
+
+  margin-left: 0;
+  padding: 15px 15px;
+
+  transform: translateX(-5%);
+
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  justify-content: end;
+  justify-items: center;
+  align-items: center;
+
+  border-radius: 0 0 20px 0;
+
+  gap: 10px 15px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* NAVIGATION */
+
+  .navigation,
+  .navigation-compact {
+    width: 100%;
+    min-height: auto;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .navigation-layout,
+  .navigation:not(.navigation-compact) .navigation-layout,
+  .navigation-compact .navigation-layout {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+
+    padding: 0;
+
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .navigation-compact .navigation-content {
+    padding: 10px 15px;
+  }
+
+  /* BRANDING */
+
+  .navigation-content,
+  .navigation-compact .navigation-content {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    padding: 15px 15px;
+
+    margin-top: 0;
+  }
+
+  .navigation-logo,
+  .navigation-compact .navigation-logo {
+    width: 25%;
+    flex-shrink: 0;
+  }
+
+  .navigation-brand,
+  .navigation-compact .navigation-brand {
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+
+    flex-shrink: 1;
+    align-items: center;
+
+    margin-left: 0;
+    white-space: normal;
+  }
+
+  .navigation-title,
+  .navigation-compact .navigation-title {
+    font-size: clamp(40px, 10vw, 80px);
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .navigation-tagline,
+  .navigation-compact .navigation-tagline {
+    font-size: clamp(12px, 3vw, 24px);
+    letter-spacing: 0;
+    text-align: center;
+
+    overflow-wrap: anywhere;
+  }
+
+  .navigation-compact .navigation-brand {
+    display: none;
+  }
+
+  .navigation-compact .navigation-logo {
+    width: 12%;
+  }
+
+  /* SOCIAL LINKS */
+
+  .navigation-socials,
+  .navigation-compact .navigation-socials {
+    width: 100%;
+
+    justify-content: center;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    padding: 0;
+    gap: 20px;
+  }
+
+  .navigation-social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+
+  /* MAIN MENU */
+
+  .navigation-bar,
+  .navigation-compact .navigation-bar {
+    width: 100%;
+    height: 50px;
+
+    margin: 0;
+    padding: 0 10px;
+
+    transform: none;
+    box-sizing: border-box;
+
+    justify-content: center;
+    gap: 10px;
+
+    border-radius: 0;
+  }
+
+  .navigation-menu-icon,
+  .navigation-compact .navigation-menu-icon {
+    height: 35px;
+  }
+
+
+  /* SUBMENU */
+
+.navigation-submenu,
+.navigation-compact .navigation-submenu {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 8px 10px;
+
+  transform: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  justify-content: center;
+  justify-items: center;
+
+  gap: 10px 15px;
+  border-radius: 0;
+}
+
+  .navigation-submenu-icon {
+    height: 35px;
+  }
+
+
+  /* TOOLTIPS */
+
+  .navigation-tooltip {
+    font-size: 16px;
+  }
+
+
+  /* DECORATIVE OVERLAY */
+
+  .navigation-overlay {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation,
+  .navigation-layout,
+  .navigation-content,
+  .navigation-logo,
+  .navigation-brand,
+  .navigation-title,
+  .navigation-tagline,
+  .navigation-socials,
+  .navigation-social-icon,
+  .navigation-bar,
+  .navigation-menu-icon,
+  .navigation-submenu,
+  .navigation-submenu-button,
+  .navigation-tooltip {
+    animation: none;
+    transition: none;
+  }
+}
+
+
+/* =========================================
+   SVG ICON COLOURS
+========================================= */
+
+/* MAIN MENU - MIDNIGHT */
+
+.navigation-menu-icon {
+  filter: brightness(0) saturate(100%)
+          invert(5%) sepia(40%)
+          saturate(1500%) hue-rotate(215deg);
+}
+
+/* SUBMENU - CYAN */
+
+.navigation-submenu-icon {
+  filter: brightness(0) saturate(100%)
+          invert(78%) sepia(95%)
+          saturate(1200%) hue-rotate(125deg);
+}
+
+/* SOCIAL LINKS - CYAN */
+
+.navigation-social-icon {
+  filter: brightness(0) saturate(100%)
+          invert(78%) sepia(95%)
+          saturate(1200%) hue-rotate(125deg);
+}

@@ -1,0 +1,228 @@
+
+.about-page {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.about-page h1 {
+  margin: 10;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4vw, 80px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--color-pink);
+	text-shadow:
+		0 0 8px rgba(255, 103, 28, 0.4),
+		0 0 25px rgba(255, 103, 28, 0.15);
+}
+
+.about-page h2 {
+  margin: 10px 0 30px;
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.5vw, 48px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-orange);
+  text-shadow:
+		0 0 15px var(--color-orange);	
+}
+
+.about-page p {
+  font-size: clamp(18px, 0.2vw, 36px);
+	line-height: 1.6;
+}
+
+/* =========================================
+   ABOUT IMAGE
+========================================= */
+
+.about-image {
+  position: relative;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.about-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+	border: none;
+	border-radius: 20px;
+}
+
+/* Left BORDER - UPPER HALF */
+.about-image::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+
+  height: 3px;
+  width: 50%;
+
+  background: var(--color-cyan);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* Right BORDER - RIGHT HALF */
+.about-image::after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+
+  height: 3px;
+  width: 50%;
+
+  background: var(--color-cyan);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+/* =========================================
+   ABOUT - CONTACT BUTTONS
+========================================= */
+
+.about-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin: 50px auto 20px;
+}
+
+.about-contact-button {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-width: 190px;
+  padding: 16px 28px;
+
+  background: var(--color-midnight);
+
+  border: 1px solid var(--color-cyan-muted);
+  border-radius: 5px;
+
+  color: var(--color-cyan);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  box-shadow:
+    inset 0 0 15px rgba(73, 12, 145, 0.3),
+    0 0 15px rgba(0, 229, 232, 0.08);
+
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Corner accent */
+
+.about-contact-button::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+
+  width: 35%;
+  height: 2px;
+
+  background: var(--color-cyan);
+  transition: background 0.25s ease;
+}
+
+/* Icon */
+
+.about-contact-icon {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-pink);
+}
+
+/* Hover */
+
+.about-contact-button:hover {
+  color: var(--color-midnight);
+  background: var(--color-cyan);
+  border-color: var(--color-cyan);
+
+  box-shadow:
+    0 0 15px rgba(0, 229, 232, 0.3),
+    0 0 30px rgba(0, 229, 232, 0.15);
+
+  transform: translateY(-3px);
+}
+
+.about-contact-button:hover .about-contact-icon {
+  color: var(--color-midnight);
+}
+
+.about-contact-button:hover::after {
+  background: var(--color-pink);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-page {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .about-page h1 {
+    font-size: clamp(36px, 9vw, 60px);
+  }
+
+  .about-page h2 {
+    font-size: clamp(20px, 5vw, 32px);
+  }
+
+  .about-page p {
+    font-size: 16px;
+  }
+
+  .about-contact {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .about-contact-button {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-contact-button {
+    transition: none;
+  }
+
+  .about-contact-button:hover {
+    transform: none;
+  }
+}

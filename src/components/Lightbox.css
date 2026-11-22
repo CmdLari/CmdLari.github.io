@@ -1,0 +1,88 @@
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 15, 0.94);
+  backdrop-filter: blur(12px);
+}
+
+.lightbox img {
+  display: block;
+
+  max-width: 85vw;
+  max-height: 85vh;
+
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  box-shadow:
+    0 0 35px rgba(245, 35, 96, 0.2),
+    0 0 70px rgba(73, 12, 145, 0.3);
+}
+
+.lightbox button {
+  position: absolute;
+  z-index: 1;
+
+  border: none;
+  background: transparent;
+
+  color: var(--color-cyan);
+  font-family: var(--font-display);
+  font-size: 60px;
+
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+  transition: color 0.2s ease;
+}
+
+.lightbox button:hover {
+  color: var(--color-pink);
+}
+
+.lightbox-close {
+  top: 20px;
+  right: 35px;
+}
+
+.lightbox-prev {
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-counter {
+  position: absolute;
+  bottom: 25px;
+
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .lightbox img {
+    max-width: 95vw;
+    max-height: 75vh;
+  }
+
+  .lightbox-prev {
+    left: 5px;
+  }
+
+  .lightbox-next {
+    right: 5px;
+  }
+}

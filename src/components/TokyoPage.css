@@ -1,0 +1,142 @@
+
+.tokyo-page {
+  width: 100%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tokyo-page h1 {
+  margin: 10;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4vw, 80px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--color-pink);
+	text-shadow:
+		0 0 8px rgba(255, 103, 28, 0.4),
+		0 0 25px rgba(255, 103, 28, 0.15);
+}
+
+.tokyo-page  h2 {
+  margin: 0 0 30px;
+
+  color: var(--color-cyan);
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tokyo-page body {
+  max-width: 70%;
+}
+
+.tokyo-intro {
+  max-width: 700px;
+  margin: 0 auto 45px;
+
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+
+.tokyo-preview {
+  position: relative;
+  display: block;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+
+  text-decoration: none;
+}
+
+/* RIGHT BORDER - LOWER HALF */
+.tokyo-preview::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 2px;
+  height: 50%;
+
+  background: var(--color-cyan);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* BOTTOM BORDER - RIGHT HALF */
+.tokyo-preview::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 50%;
+  height: 2px;
+
+  background: var(--color-cyan);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.tokyo-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  transition: filter 0.25s ease;
+}
+
+.tokyo-preview:hover img {
+  filter: brightness(1.5);
+}
+
+.tokyo-preview-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: 15px 20px;
+  background: var(--color-cyan);
+  color: var(--color-midnight);
+
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+
+  box-shadow:
+    0 0 25px rgba(0, 229, 232, 0.1),
+    0 0 35px rgba(73, 12, 145, 0.2);
+}
+
+.tokyo-preview-label:hover {
+  border-color: var(--color-cyan);
+
+  box-shadow:
+    0 0 20px rgba(0, 229, 232, 0.25),
+    0 0 45px rgba(245, 35, 96, 0.15);
+}
+
+@media (max-width: 768px) {
+  .tokyo-page {
+    padding: 30px 20px;
+  }
+
+  .tokyo-intro {
+    font-size: 16px;
+  }
+
+  .tokyo-preview-label {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}

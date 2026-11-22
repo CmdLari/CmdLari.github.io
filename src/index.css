@@ -1,0 +1,117 @@
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/fonts/Fredoka-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/fonts/Fredoka-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* VARIABLES */
+
+:root {
+  /* Core colours */
+  --color-midnight: #000021;
+  --color-violet: #211044;
+  --color-pink: #F52360;
+  --color-cyan: #00E5E8;
+  --color-orange: #FF671C;
+
+  /* Supporting colours */
+  --color-text: #F5EEFF;
+  --color-text-muted: #BDB0D5;
+  --color-cyan-muted: #006567;
+
+  /* Fonts */
+  --font-display: 'Fredoka', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-synthesis: none;
+  color: var(--color-text);
+  background-color: var(--color-midnight);
+}
+
+/* GLOBAL RESET */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  min-width: 320px;
+  display: block;
+  background-color: var(--color-midnight);
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+/* CUSTOM CURSORS */
+
+html,
+body,
+#root {
+  cursor: url('/images/gui/cursor.png') 0 0, auto;
+}
+
+a,
+button,
+[role="button"] {
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+}

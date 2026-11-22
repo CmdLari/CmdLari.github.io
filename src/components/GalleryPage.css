@@ -1,0 +1,170 @@
+
+/* =========================================
+   image PAGE - BASE
+========================================= */
+
+.image-page {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+
+  color: var(--color-text);
+  font-family: var(--font-body);
+  text-align: center;
+}
+
+
+/* =========================================
+   image SECTIONS
+========================================= */
+
+.image-section {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  border-bottom: 1px solid var(--color-cyan-muted);
+}
+
+.image-section h2 {
+  margin: 0 0 30px;
+
+  color: var(--color-cyan);
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   image GALLERY
+========================================= */
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+
+  width: 100%;
+  margin: 40px auto;
+
+  overflow: hidden;
+}
+
+.image-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+
+  border: none;
+  border-radius: 0;
+
+  cursor: url('/images/gui/pointer.png') 0 0, pointer;
+
+  transition: filter 0.25s ease;
+}
+
+.image-gallery img:hover {
+  filter: brightness(1.5);
+}
+
+
+/* =========================================
+   PRICES & REFERENCES
+========================================= */
+
+.image-info {
+  width: 90%;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.image-info p {
+  margin: 15px 0;
+}
+
+.image-info strong {
+  display: block;
+  margin-bottom: 5px;
+
+  color: var(--color-pink);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.image-info span {
+  color: var(--color-text);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.image-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 50px 20px;
+
+  font-size: 14px;
+}
+
+.image-contact strong {
+  color: var(--color-pink);
+  font-family: var(--font-display);
+}
+
+.image-contact a {
+  color: var(--color-cyan);
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.image-contact a:hover {
+  color: var(--color-pink);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  .image-section {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .image-section h2 {
+    font-size: 26px;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+    margin: 25px auto;
+  }
+
+  .image-info {
+    font-size: 13px;
+  }
+
+  .image-contact {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .image-contact > span {
+    display: none;
+  }
+}
